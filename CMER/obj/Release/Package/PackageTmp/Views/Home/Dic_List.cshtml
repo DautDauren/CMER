@@ -1,0 +1,29 @@
+﻿@model CMER.Repository.ComboGrid
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="~/Content/ComboGrid/css/smoothness/jquery-ui-1.10.1.custom.css" />
+<script type="text/javascript" src="~/Content/ComboGrid/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="~/Content/ComboGrid/jquery/jquery-ui-1.10.1.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="~/Content/ComboGrid/css/smoothness/jquery.ui.combogrid.css" />
+<script type="text/javascript" src="~/Content/ComboGrid/plugin/jquery.ui.combogrid-1.6.3.js"></script>
+<script>
+
+    var model = @Html.Raw(Model)
+$(document).ready(function(){
+		$( "#project" ).combogrid({
+		    url: 'GetDic_List',
+		debug:true,
+    //replaceNull: true,
+		colModel: [{'columnName':'id','width':'10','label':'id'}, {'columnName':'name','width':'60','label':'title'},{'columnName':'author','width':'30','label':'author'}],
+		select: function( event, ui ) {
+			$( "#project" ).val( ui.item.name );
+			return false;
+		}
+	});
+});
+</script>
+<div>
+    <div style="float:left"><input size="30" id="project" /></div><br />&nbsp;<br />
+    <div id="switcher" style="float:right"></div>
+</div>
+

@@ -1,0 +1,197 @@
+﻿
+<table id="dg" class="easyui-datagrid" title="План\Факт" style="width:1300px;height:100%" pagination="true" rownumbers="true"
+       data-options="
+                pageSize:15,
+                pageList: [15,25,50,100],
+                singleSelect: true,
+                toolbar: '#tb',
+               sortName='IDFact',
+                sortorder='asc',
+               url '/Home/PlanFactErrList' ,
+               method 'get' ,
+               remotefilter true,
+               ondblclickcell:ondblclickcell,
+       ">
+    <thead>
+        <tr>
+            <th data-options="field:'IDFact',width:80">Fact ID</th>
+            @*<th data-options="field:'productid',width:100,
+                formatter:function(value,row){
+                    return row.productname;
+                },
+                editor:{
+                    type:'combobox',
+                    options:{
+                        valueField:'productid',
+                        textField:'productname',
+                        method:'get',
+                        url:'products.json',
+                        required:true,
+                onClickCell: onClickCell,
+                    }
+                }">Product</th>*@
+            <th data-options="field:'Name',width:180,editor:'textbox', sortable='true'">Наименование</th>
+            <th data-options="field:'Qty',width:80,align:'right',editor:'numberbox', sortable='true'">Кол-во</th>
+            <th data-options="field:'Volume',width:100,editor:'textbox', sortable='true'">Стоимость</th>
+            <th formatter="DateFormat" data-options="field:'DateStart',width:100,editor:'textbox'">Дата начала договора</th>
+            <th formatter="DateFormat" data-options="field:'DateEnd',width:100,editor:'textbox'">Дата окончания договора</th>
+            <th data-options="field:'kpvedName', width:100,editor:'textbox', sortable='true'">Наименование по КПВЭД</th>
+            <th data-options="field:'ValueKpved',width:200,editor:'textbox', sortable='true'">Наименование по КПВЭД</th>
+            <th data-options="field:'ctgPName',width:100,editor:'textbox', sortable='true'">Поставщик</th>
+            <th data-options="field:'ctgSName',width:100,editor:'textbox', sortable='true'">Заказчик</th>
+            <th data-options="field:'katoPName',width:100,editor:'textbox', sortable='true'">Местонахождение заказчика</th>
+            <th data-options="field:'katoSName',width:100,editor:'textbox', sortable='true'">Местонахождение поставщика</th>
+            <th data-options="field:'mkeeName',width:100,editor:'textbox', sortable='true'">Ед. Измерения</th>
+            <th data-options="field:'skpName',width:100,editor:'textbox', sortable='true'">Наименование по СКП</th>
+            <th data-options="field:'countryPName',width:100,editor:'textbox', sortable='true'">Страна поставщика</th>
+            <th data-options="field:'countrySName',width:100,editor:'textbox', sortable='true'">Страна заказчика</th>
+            <th data-options="field:'srcName',width:100,editor:'textbox', sortable='true'">Источник</th>
+            <th data-options="field:'truType',width:100,editor:'textbox', sortable='true'">Тип ТРУ</th>
+            @*<th data-options="field:'IdOriginal',width:100,editor:'textbox'">IdOriginal</th>*@
+            @*<th data-options="field:'IDKatoDelivery',width:100,editor:'textbox'">IDKatoDelivery</th>
+                <th data-options="field:'ValueKatoDelivery',width:100,editor:'textbox'">ValueKatoDelivery</th>
+                <th data-options="field:'IDTypePlanFact',width:100,editor:'textbox'">IDTypePlanFact</th>
+                <th data-options="field:'CreatedDate',width:100,editor:'textbox'">CreatedDate</th>
+                <th data-options="field:'UpdatedDate',width:100,editor:'textbox'">UpdatedDate</th>
+                <th data-options="field:'FilePath',width:100,editor:'textbox'">FilePath</th>
+                <th data-options="field:'RowNumber',width:100,editor:'textbox'">RowNumber</th>
+                <th data-options="field:'DateReportStart',width:100,editor:'textbox'">DateReportStart</th>
+                <th data-options="field:'DateReportEnd',width:100,editor:'textbox'">DateReportEnd</th>
+                <th data-options="field:'ContractNumber',width:100,editor:'textbox'">ContractNumber</th>
+                <th data-options="field:'KS',width:100,editor:'textbox'">KS</th>
+                <th data-options="field:'IDCertificate',width:100,editor:'textbox'">IDCertificate</th>
+                <th data-options="field:'NumCertificate',width:100,editor:'textbox'">NumCertificate</th>
+                <th data-options="field:'IDTnved',width:100,editor:'textbox'">IDTnved</th>
+                <th data-options="field:'ValueTnved',width:100,editor:'textbox'">ValueTnved</th>
+                <th data-options="field:'ErrorMessage',width:100,editor:'textbox'">ErrorMessage</th>
+                <th data-options="field:'SerialCertificate',width:100,editor:'textbox'">SerialCertificate</th>
+                <th data-options="field:'OtpLastYear',width:100,editor:'textbox'">OtpLastYear</th>
+                <th data-options="field:'IDCertificateDetail',width:100,editor:'textbox'">IDCertificateDetail</th>
+                <th data-options="field:'IssetInSource',width:100,editor:'textbox'">IssetInSource</th>
+                <th data-options="field:'ErrorCode',width:100,editor:'textbox'">ErrorCode</th>
+                <th data-options="field:'ErrorColumn',width:100,editor:'textbox'">ErrorColumn</th>
+                <th data-options="field:'VolumeWNds',width:100,editor:'textbox'">VolumeWNds</th>
+                <th data-options="field:'Nds',width:100,editor:'textbox'">Nds</th>*@
+
+        </tr>
+    </thead>
+</table>
+
+<div id="tb" style="height:auto">
+    @*<a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="append()">Добавить</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" onclick="removeit()">Удалить</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-save',plain:true" onclick="accept()">Применить</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-undo',plain:true" onclick="reject()">Вернуть</a>*@
+    <a href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-save" plain="true" onclick="editUser()">Корректировать</a>
+</div>
+
+<script type="text/javascript">
+    $("#dg").width($(".easyui-ribbon").width())
+    $("#dg").height($(window).height() - ($(".easyui-ribbon").height() + 130))
+    var editIndex = undefined;
+    function endEditing() {
+        if (editIndex == undefined) { return true }
+        if ($('#dg').datagrid('validateRow', editIndex)) {
+            var ed = $('#dg').datagrid('getEditor', { index: editIndex, field: 'productid' });
+            var productname = $(ed.target).combobox('getText');
+            $('#dg').datagrid('getRows')[editIndex]['productname'] = productname;
+            $('#dg').datagrid('endEdit', editIndex);
+            editIndex = undefined;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    function onDblClickCell(i, f, v) {
+        $(this).datagrid("beginEdit", i);
+        var ed = $(this).datagrid('getEditor', { index: i, field: f });
+        $(ed.target).focus();
+        //console.log($(ed.target).data());
+    }
+    function onClickCell(index, field) {
+        if (editIndex != index) {
+            if (endEditing()) {
+                $('#dg').datagrid('selectRow', index)
+                        .datagrid('beginEdit', index);
+                var ed = $('#dg').datagrid('getEditor', { index: index, field: field });
+                if (ed) {
+                    ($(ed.target).data('textbox') ? $(ed.target).textbox('textbox') : $(ed.target)).focus();
+                }
+                editIndex = index;
+            } else {
+                $('#dg').datagrid('selectRow', editIndex);
+            }
+        }
+    }
+    function append() {
+        if (endEditing()) {
+            $('#dg').datagrid('appendRow', { status: 'P' });
+            editIndex = $('#dg').datagrid('getRows').length - 1;
+            $('#dg').datagrid('selectRow', editIndex)
+                    .datagrid('beginEdit', editIndex);
+        }
+    }
+    function editUser() {
+        var row = $('#dg').datagrid('getSelected');
+        if (row) {
+            console.log(row);
+            window.location.href = '/Home/RowView/' + row.IDFact;
+        }
+    }
+    function removeit() {
+        if (editIndex == undefined) { return }
+        $('#dg').datagrid('cancelEdit', editIndex)
+                .datagrid('deleteRow', editIndex);
+        editIndex = undefined;
+    }
+    function accept() {
+        if (endEditing()) {
+            $('#dg').datagrid('acceptChanges');
+        }
+    }
+    function reject() {
+        $('#dg').datagrid('rejectChanges');
+        editIndex = undefined;
+    }
+    function cellValidStyle(value, row, index) {
+        if (value < 30) {
+            return 'background-color:red;';
+        }
+    }
+    function DateFormat(val, row) {
+        return moment(val).format('DD.MM.YYYY');;
+    }
+
+    function cellValidformat(val, row) {
+
+        if (val < 30) {
+            return '<span style="color:red;">(' + val + ')</span>';
+        } else {
+            return val;
+        }
+    }
+    function VFColName(colID, colName, value, row, index) {
+
+        var result;
+        //if (eval("row." + colName) != null && (eval("row." + colID) == null || eval("row." + colID) == ""))
+        //    result = '<span style="color:red;">' + eval("row."+colName) + '</span>';
+        //else
+        //    result = eval("row." + colName);
+        resultb = "";
+        //return eval("row." + colName);
+    }
+    function VFColID(colID, colName, value, row, index) {
+        // var result = "bg-success";
+        if (eval("row." + colName) != null && (eval("row." + colID) == null || eval("row." + colID) == ""))
+            return '<span style="color:red;">' + eval("row." + colID) + '</span>';
+        else
+            return eval("row." + colID);
+
+        //return eval("row." + colName);
+    }
+
+
+
+</script>

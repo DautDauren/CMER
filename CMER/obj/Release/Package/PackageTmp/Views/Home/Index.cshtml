@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "План/Факт";
+}
+<script>
+    $(function () {
+        //$.getJSON("/Home/GetKpvedList", function () { });
+    });
+</script>
+<div>
+    <table id="dg" title="План/Факт" class="easyui-datagrid"
+           url="/Home/PlanFactErrList"
+           toolbar="#toolbar" pagination="true"
+           rownumbers="true" fitcolumns="true" singleselect="true">
+        <thead>
+            <tr>
+                <th field="Name" width="50">Наименование</th>
+                <th field="Qty" width="50">Кол-во</th>
+                <th field="Volume" width="50">Стоимость</th>
+                @*<th field="not used" formatter="(function(v,r,i){return formatColumn('Dic_Kpved.Label',v,r,i);})" width="50">Код КПВЭД</th>
+                    <th field="not used2" formatter="(function(v,r,i){return formatColumn('Dic_Kpved.Name_1',v,r,i);})" width="50">Наименование КПВЭД</th>*@
+            </tr>
+        </thead>
+    </table>
+            <div id="toolbar">
+                <a href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-save" plain="true" onclick="editUser()">Коректировать</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-undo" plain="true" onclick="javascript:$('#dg').edatagrid('cancelRow')">Отмена</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-edit" plain="true" onclick="correctField()">Исправить</a>
+            </div>
+        </div>
+
+
+<script type="text/javascript">
+    $(function () {
+        window.location.href = "/Home/PlanFactView"
+        //$("#dialog").dialog({ autoOpen: false, });
+        $('#dg').edatagrid({
+            saveUrl: 'save_user.php',
+            updateUrl: 'update_user.php',
+            destroyUrl: 'destroy_user.php'
+        });
+    });
+    function editUser() {
+        var row = $('#dg').datagrid('getSelected');
+        if (row) {
+            console.log(row);
+            window.location.href = '/Home/RowErrView/' + row.IDFact;
+        }
+    }
+
+    function saveUser() {
+        var Name = $("#Name").val();
+        var row = $('#dg').datagrid('getSelected');
+        if (row) {
+            console.log(Name);
+        }
+    }
+    function correctField() {
+        $("#dialog").dialog("open");
+    }
+
+    function formatColumn(colName, value, row, index) {
+        return eval("row."+colName);
+    }
+</script>

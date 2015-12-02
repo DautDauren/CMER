@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "_LeftMenuBoot";
+}
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Рабочие таблицы</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Справочники</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Кубы</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Настройки</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <button id="PlanFactView" type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Верные
+            </button>
+            <button id="PlanFactErrView" type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Ошибочные
+            </button>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">...</div>
+        <div role="tabpanel" class="tab-pane" id="messages">...</div>
+        <div role="tabpanel" class="tab-pane" id="settings">...</div>
+    </div>
+</div>
+

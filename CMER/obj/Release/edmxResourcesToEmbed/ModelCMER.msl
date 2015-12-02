@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CMER_DWModelStoreContainer" CdmEntityContainer="CMER_DWEnt">
+    <EntitySetMapping Name="Dic_Certificates">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Certificates">
+        <MappingFragment StoreEntitySet="Dic_Certificates">
+          <ScalarProperty Name="Wrong" ColumnName="Wrong" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="lfn" ColumnName="lfn" />
+          <ScalarProperty Name="Серия_сертификата" ColumnName="Серия сертификата" />
+          <ScalarProperty Name="Номер_сертификата" ColumnName="Номер сертификата" />
+          <ScalarProperty Name="Наименование_органа_выдачи" ColumnName="Наименование органа выдачи" />
+          <ScalarProperty Name="Код_органа_выдачи" ColumnName="Код органа выдачи" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Основание_для_выдачи" ColumnName="Основание для выдачи" />
+          <ScalarProperty Name="Транспорт" ColumnName="Транспорт" />
+          <ScalarProperty Name="Заявитель" ColumnName="Заявитель" />
+          <ScalarProperty Name="БИН_импортера" ColumnName="БИН импортера" />
+          <ScalarProperty Name="Адрес_импортера" ColumnName="Адрес импортера" />
+          <ScalarProperty Name="Наименование_импортера_каз" ColumnName="Наименование импортера каз" />
+          <ScalarProperty Name="Наименование_импортера_рус" ColumnName="Наименование импортера рус" />
+          <ScalarProperty Name="ФИО_руководителя" ColumnName="ФИО руководителя" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="www" ColumnName="www" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Организационно_правовая_форма_каз" ColumnName="Организационно-правовая форма каз" />
+          <ScalarProperty Name="Организационно_правовая_форма_рус" ColumnName="Организационно-правовая форма рус" />
+          <ScalarProperty Name="КАТО" ColumnName="КАТО" />
+          <ScalarProperty Name="БИН_экспортера" ColumnName="БИН экспортера" />
+          <ScalarProperty Name="Адрес_экспортера_каз" ColumnName="Адрес экспортера каз" />
+          <ScalarProperty Name="Адрес_экспортера_рус" ColumnName="Адрес экспортера рус" />
+          <ScalarProperty Name="Наименование_экспортера_каз" ColumnName="Наименование экспортера каз" />
+          <ScalarProperty Name="Наименование_экспортера_рус" ColumnName="Наименование экспортера рус" />
+          <ScalarProperty Name="Дата_сертификата" ColumnName="Дата сертификата" />
+          <ScalarProperty Name="KatoRef" ColumnName="KatoRef" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Certificates_">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Certificates_">
+        <MappingFragment StoreEntitySet="Dic_Certificates_">
+          <ScalarProperty Name="Wrong" ColumnName="Wrong" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="lfn" ColumnName="lfn" />
+          <ScalarProperty Name="Серия_сертификата" ColumnName="Серия сертификата" />
+          <ScalarProperty Name="Номер_сертификата" ColumnName="Номер сертификата" />
+          <ScalarProperty Name="Наименование_органа_выдачи" ColumnName="Наименование органа выдачи" />
+          <ScalarProperty Name="Код_органа_выдачи" ColumnName="Код органа выдачи" />
+          <ScalarProperty Name="Цена_за_1_ед" ColumnName="Цена за 1 ед" />
+          <ScalarProperty Name="МКЕИ" ColumnName="МКЕИ" />
+          <ScalarProperty Name="Кол_во" ColumnName="Кол-во" />
+          <ScalarProperty Name="Вес_нетто_брутто" ColumnName="Вес нетто брутто" />
+          <ScalarProperty Name="Доля_КС__" ColumnName="Доля КС %" />
+          <ScalarProperty Name="Наименование_товара_каз" ColumnName="Наименование товара каз" />
+          <ScalarProperty Name="Наименование_товара_рус" ColumnName="Наименование товара рус" />
+          <ScalarProperty Name="Упаковка" ColumnName="Упаковка" />
+          <ScalarProperty Name="КПВЭД" ColumnName="КПВЭД" />
+          <ScalarProperty Name="ТНВЭД" ColumnName="ТНВЭД" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Основание_для_выдачи" ColumnName="Основание для выдачи" />
+          <ScalarProperty Name="Транспорт" ColumnName="Транспорт" />
+          <ScalarProperty Name="Заявитель" ColumnName="Заявитель" />
+          <ScalarProperty Name="БИН_импортера" ColumnName="БИН импортера" />
+          <ScalarProperty Name="Адрес_импортера" ColumnName="Адрес импортера" />
+          <ScalarProperty Name="Наименование_импортера_каз" ColumnName="Наименование импортера каз" />
+          <ScalarProperty Name="Наименование_импортера_рус" ColumnName="Наименование импортера рус" />
+          <ScalarProperty Name="ФИО_руководителя" ColumnName="ФИО руководителя" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="www" ColumnName="www" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Организационно_правовая_форма_каз" ColumnName="Организационно-правовая форма каз" />
+          <ScalarProperty Name="Организационно_правовая_форма_рус" ColumnName="Организационно-правовая форма рус" />
+          <ScalarProperty Name="КАТО" ColumnName="КАТО" />
+          <ScalarProperty Name="БИН_экспортера" ColumnName="БИН экспортера" />
+          <ScalarProperty Name="Адрес_экспортера_каз" ColumnName="Адрес экспортера каз" />
+          <ScalarProperty Name="Адрес_экспортера_рус" ColumnName="Адрес экспортера рус" />
+          <ScalarProperty Name="Наименование_экспортера_каз" ColumnName="Наименование экспортера каз" />
+          <ScalarProperty Name="Наименование_экспортера_рус" ColumnName="Наименование экспортера рус" />
+          <ScalarProperty Name="Дата_сертификата" ColumnName="Дата сертификата" />
+          <ScalarProperty Name="TnvedRef" ColumnName="TnvedRef" />
+          <ScalarProperty Name="KpvedRef" ColumnName="KpvedRef" />
+          <ScalarProperty Name="MkeeRef" ColumnName="MkeeRef" />
+          <ScalarProperty Name="KatoRef" ColumnName="KatoRef" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_CertificatesDetail">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_CertificatesDetail">
+        <MappingFragment StoreEntitySet="Dic_CertificatesDetail">
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="Цена_за_1_ед" ColumnName="Цена за 1 ед" />
+          <ScalarProperty Name="МКЕИ" ColumnName="МКЕИ" />
+          <ScalarProperty Name="Кол_во" ColumnName="Кол-во" />
+          <ScalarProperty Name="Вес_нетто_брутто" ColumnName="Вес нетто брутто" />
+          <ScalarProperty Name="Доля_КС__" ColumnName="Доля КС %" />
+          <ScalarProperty Name="Наименование_товара_каз" ColumnName="Наименование товара каз" />
+          <ScalarProperty Name="Наименование_товара_рус" ColumnName="Наименование товара рус" />
+          <ScalarProperty Name="Упаковка" ColumnName="Упаковка" />
+          <ScalarProperty Name="КПВЭД" ColumnName="КПВЭД" />
+          <ScalarProperty Name="ТНВЭД" ColumnName="ТНВЭД" />
+          <ScalarProperty Name="TnvedRef" ColumnName="TnvedRef" />
+          <ScalarProperty Name="KpvedRef" ColumnName="KpvedRef" />
+          <ScalarProperty Name="MkeeRef" ColumnName="MkeeRef" />
+          <ScalarProperty Name="IDCertificate" ColumnName="IDCertificate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_CertificatesNEW">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_CertificatesNEW">
+        <MappingFragment StoreEntitySet="Dic_CertificatesNEW">
+          <ScalarProperty Name="DateReportEnd" ColumnName="DateReportEnd" />
+          <ScalarProperty Name="DateReportStart" ColumnName="DateReportStart" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="Дата_выдачи_сертификата" ColumnName="Дата выдачи сертификата" />
+          <ScalarProperty Name="Номер_сертификата_СТ_KZ" ColumnName="Номер сертификата СТ-KZ" />
+          <ScalarProperty Name="ДМС" ColumnName="ДМС" />
+          <ScalarProperty Name="Код_ТНВЭД" ColumnName="Код ТНВЭД" />
+          <ScalarProperty Name="Код_КП_ВЭД" ColumnName="Код КП ВЭД" />
+          <ScalarProperty Name="Код_ЕНС_ТРУ" ColumnName="Код ЕНС ТРУ" />
+          <ScalarProperty Name="Производимая_продукция_Описание_" ColumnName="Производимая продукция(Описание)" />
+          <ScalarProperty Name="контактный_телефон" ColumnName="контактный телефон" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+          <ScalarProperty Name="Регион" ColumnName="Регион" />
+          <ScalarProperty Name="IDKpved" ColumnName="IDKpved" />
+          <ScalarProperty Name="IDContragent" ColumnName="IDContragent" />
+          <ScalarProperty Name="БИН" ColumnName="БИН" />
+          <ScalarProperty Name="Наименование_ОТП" ColumnName="Наименование ОТП" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Contragents">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Contragents">
+        <MappingFragment StoreEntitySet="Dic_Contragents">
+          <ScalarProperty Name="TypeContragent" ColumnName="TypeContragent" />
+          <ScalarProperty Name="ColumnID" ColumnName="ColumnID" />
+          <ScalarProperty Name="TableSource" ColumnName="TableSource" />
+          <ScalarProperty Name="IDDuble" ColumnName="IDDuble" />
+          <ScalarProperty Name="IDOriginal" ColumnName="IDOriginal" />
+          <ScalarProperty Name="IDKrp" ColumnName="IDKrp" />
+          <ScalarProperty Name="IDKato" ColumnName="IDKato" />
+          <ScalarProperty Name="IDCountry" ColumnName="IDCountry" />
+          <ScalarProperty Name="ShorNameKz" ColumnName="ShorNameKz" />
+          <ScalarProperty Name="ShorNameRu" ColumnName="ShorNameRu" />
+          <ScalarProperty Name="IDOked" ColumnName="IDOked" />
+          <ScalarProperty Name="Phones" ColumnName="Phones" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AdressFact" ColumnName="AdressFact" />
+          <ScalarProperty Name="AdressJur" ColumnName="AdressJur" />
+          <ScalarProperty Name="NameKz" ColumnName="NameKz" />
+          <ScalarProperty Name="NameRu" ColumnName="NameRu" />
+          <ScalarProperty Name="RNN" ColumnName="RNN" />
+          <ScalarProperty Name="BIN" ColumnName="BIN" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_ContragentsCl">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_ContragentsCl">
+        <MappingFragment StoreEntitySet="Dic_ContragentsCl">
+          <ScalarProperty Name="IsFalseBusinessman" ColumnName="IsFalseBusinessman" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="IsInternationalCompany" ColumnName="IsInternationalCompany" />
+          <ScalarProperty Name="IsNationalCompany" ColumnName="IsNationalCompany" />
+          <ScalarProperty Name="FIOLeader" ColumnName="FIOLeader" />
+          <ScalarProperty Name="IsOTP" ColumnName="IsOTP" />
+          <ScalarProperty Name="IINLeader" ColumnName="IINLeader" />
+          <ScalarProperty Name="TypeContragent" ColumnName="TypeContragent" />
+          <ScalarProperty Name="ColumnID" ColumnName="ColumnID" />
+          <ScalarProperty Name="TableSource" ColumnName="TableSource" />
+          <ScalarProperty Name="IDDuble" ColumnName="IDDuble" />
+          <ScalarProperty Name="IDOriginal" ColumnName="IDOriginal" />
+          <ScalarProperty Name="IDKrp" ColumnName="IDKrp" />
+          <ScalarProperty Name="IDKato" ColumnName="IDKato" />
+          <ScalarProperty Name="IDCountry" ColumnName="IDCountry" />
+          <ScalarProperty Name="ShorNameKz" ColumnName="ShorNameKz" />
+          <ScalarProperty Name="ShorNameRu" ColumnName="ShorNameRu" />
+          <ScalarProperty Name="IDOked" ColumnName="IDOked" />
+          <ScalarProperty Name="Phones" ColumnName="Phones" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AdressFact" ColumnName="AdressFact" />
+          <ScalarProperty Name="AdressJur" ColumnName="AdressJur" />
+          <ScalarProperty Name="NameKz" ColumnName="NameKz" />
+          <ScalarProperty Name="NameRu" ColumnName="NameRu" />
+          <ScalarProperty Name="RNN" ColumnName="RNN" />
+          <ScalarProperty Name="BIN" ColumnName="BIN" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Countries">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Countries">
+        <MappingFragment StoreEntitySet="Dic_Countries">
+          <ScalarProperty Name="Alfa3" ColumnName="Alfa3" />
+          <ScalarProperty Name="Alfa2" ColumnName="Alfa2" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Names" ColumnName="Names" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Ens">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Ens">
+        <MappingFragment StoreEntitySet="Dic_Ens">
+          <ScalarProperty Name="IDKpved" ColumnName="IDKpved" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="SheetName" ColumnName="SheetName" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Mkee_label" ColumnName="Mkee_label" />
+          <ScalarProperty Name="Mkee_name" ColumnName="Mkee_name" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+          <ScalarProperty Name="Name_1" ColumnName="Name_1" />
+          <ScalarProperty Name="Unioncheck" ColumnName="Unioncheck" />
+          <ScalarProperty Name="Kpved" ColumnName="Kpved" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="TypePurchase" ColumnName="TypePurchase" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Kato">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Kato">
+        <MappingFragment StoreEntitySet="Dic_Kato">
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="tempParent" ColumnName="tempParent" />
+          <ScalarProperty Name="Name_2" ColumnName="Name_2" />
+          <ScalarProperty Name="Name_1" ColumnName="Name_1" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Kpved">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Kpved">
+        <MappingFragment StoreEntitySet="Dic_Kpved">
+          <ScalarProperty Name="StandardName" ColumnName="StandardName" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="ValueMkee" ColumnName="ValueMkee" />
+          <ScalarProperty Name="CodeMkee" ColumnName="CodeMkee" />
+          <ScalarProperty Name="CountSymbols" ColumnName="CountSymbols" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Kpved_type_desc" ColumnName="Kpved_type_desc" />
+          <ScalarProperty Name="IdTRUType" ColumnName="IdTRUType" />
+          <ScalarProperty Name="Name_2" ColumnName="Name_2" />
+          <ScalarProperty Name="Name_1" ColumnName="Name_1" />
+          <ScalarProperty Name="Unioncheck" ColumnName="Unioncheck" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Mkee">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Mkee">
+        <MappingFragment StoreEntitySet="Dic_Mkee">
+          <ScalarProperty Name="Name_2" ColumnName="Name_2" />
+          <ScalarProperty Name="Name_1" ColumnName="Name_1" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Oked">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Oked">
+        <MappingFragment StoreEntitySet="Dic_Oked">
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="tempParent" ColumnName="tempParent" />
+          <ScalarProperty Name="Name_2" ColumnName="Name_2" />
+          <ScalarProperty Name="Name_1" ColumnName="Name_1" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Skp">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Skp">
+        <MappingFragment StoreEntitySet="Dic_Skp">
+          <ScalarProperty Name="IDKpved" ColumnName="IDKpved" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentKod" ColumnName="ParentKod" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Kpved" ColumnName="Kpved" />
+          <ScalarProperty Name="TypeTru" ColumnName="TypeTru" />
+          <ScalarProperty Name="Unit4" ColumnName="Unit4" />
+          <ScalarProperty Name="Unit3" ColumnName="Unit3" />
+          <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+          <ScalarProperty Name="Unit1" ColumnName="Unit1" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="NameKz" ColumnName="NameKz" />
+          <ScalarProperty Name="NameRu" ColumnName="NameRu" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Source">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Source">
+        <MappingFragment StoreEntitySet="Dic_Source">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Tnved">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_Tnved">
+        <MappingFragment StoreEntitySet="Dic_Tnved">
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ImportDuty" ColumnName="ImportDuty" />
+          <ScalarProperty Name="Mkee" ColumnName="Mkee" />
+          <ScalarProperty Name="Name_2" ColumnName="Name_2" />
+          <ScalarProperty Name="Name_1" ColumnName="Name_1" />
+          <ScalarProperty Name="Unioncheck" ColumnName="Unioncheck" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_TRUType">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_TRUType">
+        <MappingFragment StoreEntitySet="Dic_TRUType">
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_TRUType_">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_TRUType_">
+        <MappingFragment StoreEntitySet="Dic_TRUType_">
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_TypePlanFact">
+      <EntityTypeMapping TypeName="CMER_DWModel.Dic_TypePlanFact">
+        <MappingFragment StoreEntitySet="Dic_TypePlanFact">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dimDate">
+      <EntityTypeMapping TypeName="CMER_DWModel.dimDate">
+        <MappingFragment StoreEntitySet="dimDate">
+          <ScalarProperty Name="DescrDay" ColumnName="DescrDay" />
+          <ScalarProperty Name="IDDay" ColumnName="IDDay" />
+          <ScalarProperty Name="DescrMonth" ColumnName="DescrMonth" />
+          <ScalarProperty Name="IDMonth" ColumnName="IDMonth" />
+          <ScalarProperty Name="DescrQuarter" ColumnName="DescrQuarter" />
+          <ScalarProperty Name="IDQuarter" ColumnName="IDQuarter" />
+          <ScalarProperty Name="DescrSemester" ColumnName="DescrSemester" />
+          <ScalarProperty Name="IDSemester" ColumnName="IDSemester" />
+          <ScalarProperty Name="DescrYear" ColumnName="DescrYear" />
+          <ScalarProperty Name="IDYear" ColumnName="IDYear" />
+          <ScalarProperty Name="IDDate" ColumnName="IDDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanFact">
+      <EntityTypeMapping TypeName="CMER_DWModel.PlanFact">
+        <MappingFragment StoreEntitySet="PlanFact">
+          <ScalarProperty Name="IsError" ColumnName="IsError" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="IdOriginal" ColumnName="IdOriginal" />
+          <ScalarProperty Name="ValueDateEnd" ColumnName="ValueDateEnd" />
+          <ScalarProperty Name="ValueDateStart" ColumnName="ValueDateStart" />
+          <ScalarProperty Name="ValueQty" ColumnName="ValueQty" />
+          <ScalarProperty Name="ValueVolume" ColumnName="ValueVolume" />
+          <ScalarProperty Name="ValueSkp" ColumnName="ValueSkp" />
+          <ScalarProperty Name="ValueTnved" ColumnName="ValueTnved" />
+          <ScalarProperty Name="ValueKpved" ColumnName="ValueKpved" />
+          <ScalarProperty Name="ValueCountryPurchaser" ColumnName="ValueCountryPurchaser" />
+          <ScalarProperty Name="ValueCountrySupplier" ColumnName="ValueCountrySupplier" />
+          <ScalarProperty Name="ValueKatoSupplier" ColumnName="ValueKatoSupplier" />
+          <ScalarProperty Name="ValueKatoPurchaser" ColumnName="ValueKatoPurchaser" />
+          <ScalarProperty Name="ValueKatoDelivery" ColumnName="ValueKatoDelivery" />
+          <ScalarProperty Name="ValueMkee" ColumnName="ValueMkee" />
+          <ScalarProperty Name="ErrorColumn" ColumnName="ErrorColumn" />
+          <ScalarProperty Name="ErrorCode" ColumnName="ErrorCode" />
+          <ScalarProperty Name="KSSum" ColumnName="KSSum" />
+          <ScalarProperty Name="IDKpvedTRU" ColumnName="IDKpvedTRU" />
+          <ScalarProperty Name="IDFactErr" ColumnName="IDFactErr" />
+          <ScalarProperty Name="Nds" ColumnName="Nds" />
+          <ScalarProperty Name="VolumeWNds" ColumnName="VolumeWNds" />
+          <ScalarProperty Name="IdCountryPurchaser" ColumnName="IdCountryPurchaser" />
+          <ScalarProperty Name="IdCountrySupplier" ColumnName="IdCountrySupplier" />
+          <ScalarProperty Name="ContractNumber" ColumnName="ContractNumber" />
+          <ScalarProperty Name="DateReportEnd" ColumnName="DateReportEnd" />
+          <ScalarProperty Name="IssetInSource" ColumnName="IssetInSource" />
+          <ScalarProperty Name="DateReportStart" ColumnName="DateReportStart" />
+          <ScalarProperty Name="IDCertificateDetail" ColumnName="IDCertificateDetail" />
+          <ScalarProperty Name="OtpLastYear" ColumnName="OtpLastYear" />
+          <ScalarProperty Name="SerialCertificate" ColumnName="SerialCertificate" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IDTnved" ColumnName="IDTnved" />
+          <ScalarProperty Name="IDEns" ColumnName="IDEns" />
+          <ScalarProperty Name="NumCertificate" ColumnName="NumCertificate" />
+          <ScalarProperty Name="IDCertificate" ColumnName="IDCertificate" />
+          <ScalarProperty Name="KS" ColumnName="KS" />
+          <ScalarProperty Name="IDSkp" ColumnName="IDSkp" />
+          <ScalarProperty Name="IDTypePlanFact" ColumnName="IDTypePlanFact" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="IDSource" ColumnName="IDSource" />
+          <ScalarProperty Name="IDContragentSupplier" ColumnName="IDContragentSupplier" />
+          <ScalarProperty Name="IDContragentPurchaser" ColumnName="IDContragentPurchaser" />
+          <ScalarProperty Name="IDKatoDelivery" ColumnName="IDKatoDelivery" />
+          <ScalarProperty Name="IDKatoSupplier" ColumnName="IDKatoSupplier" />
+          <ScalarProperty Name="IDKatoPurchaser" ColumnName="IDKatoPurchaser" />
+          <ScalarProperty Name="IDMkee" ColumnName="IDMkee" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="IDKpved" ColumnName="IDKpved" />
+          <ScalarProperty Name="IDFact" ColumnName="IDFact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanFact_Err">
+      <EntityTypeMapping TypeName="CMER_DWModel.PlanFact_Err">
+        <MappingFragment StoreEntitySet="PlanFact_Err">
+          <ScalarProperty Name="ValueSkp" ColumnName="ValueSkp" />
+          <ScalarProperty Name="ValueTnved" ColumnName="ValueTnved" />
+          <ScalarProperty Name="ValueKpved" ColumnName="ValueKpved" />
+          <ScalarProperty Name="ValueCountryPurchaser" ColumnName="ValueCountryPurchaser" />
+          <ScalarProperty Name="ValueCountrySupplier" ColumnName="ValueCountrySupplier" />
+          <ScalarProperty Name="ValueKatoSupplier" ColumnName="ValueKatoSupplier" />
+          <ScalarProperty Name="ValueKatoPurchaser" ColumnName="ValueKatoPurchaser" />
+          <ScalarProperty Name="ValueKatoDelivery" ColumnName="ValueKatoDelivery" />
+          <ScalarProperty Name="ValueMkee" ColumnName="ValueMkee" />
+          <ScalarProperty Name="IdOriginal" ColumnName="IdOriginal" />
+          <ScalarProperty Name="Nds" ColumnName="Nds" />
+          <ScalarProperty Name="VolumeWNds" ColumnName="VolumeWNds" />
+          <ScalarProperty Name="IDCountrySupplier" ColumnName="IDCountrySupplier" />
+          <ScalarProperty Name="IDCountryPurchaser" ColumnName="IDCountryPurchaser" />
+          <ScalarProperty Name="IDKatoSupplier" ColumnName="IDKatoSupplier" />
+          <ScalarProperty Name="IDKatoPurchaser" ColumnName="IDKatoPurchaser" />
+          <ScalarProperty Name="ContractNumber" ColumnName="ContractNumber" />
+          <ScalarProperty Name="ErrorColumn" ColumnName="ErrorColumn" />
+          <ScalarProperty Name="ErrorCode" ColumnName="ErrorCode" />
+          <ScalarProperty Name="DateReportEnd" ColumnName="DateReportEnd" />
+          <ScalarProperty Name="IssetInSource" ColumnName="IssetInSource" />
+          <ScalarProperty Name="DateReportStart" ColumnName="DateReportStart" />
+          <ScalarProperty Name="IDCertificateDetail" ColumnName="IDCertificateDetail" />
+          <ScalarProperty Name="OtpLastYear" ColumnName="OtpLastYear" />
+          <ScalarProperty Name="SerialCertificate" ColumnName="SerialCertificate" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="IDTnved" ColumnName="IDTnved" />
+          <ScalarProperty Name="IDEns" ColumnName="IDEns" />
+          <ScalarProperty Name="NumCertificate" ColumnName="NumCertificate" />
+          <ScalarProperty Name="IDCertificate" ColumnName="IDCertificate" />
+          <ScalarProperty Name="KS" ColumnName="KS" />
+          <ScalarProperty Name="IDSkp" ColumnName="IDSkp" />
+          <ScalarProperty Name="IDTypePlanFact" ColumnName="IDTypePlanFact" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="IDSource" ColumnName="IDSource" />
+          <ScalarProperty Name="IDContragentSupplier" ColumnName="IDContragentSupplier" />
+          <ScalarProperty Name="IDContragentPurchaser" ColumnName="IDContragentPurchaser" />
+          <ScalarProperty Name="IDKatoDelivery" ColumnName="IDKatoDelivery" />
+          <ScalarProperty Name="IDMkee" ColumnName="IDMkee" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="IDKpved" ColumnName="IDKpved" />
+          <ScalarProperty Name="IDFact" ColumnName="IDFact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XLSX_CMER_Contragents">
+      <EntityTypeMapping TypeName="CMER_DWModel.XLSX_CMER_Contragents">
+        <MappingFragment StoreEntitySet="XLSX_CMER_Contragents">
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XLSX_CMER_Countries">
+      <EntityTypeMapping TypeName="CMER_DWModel.XLSX_CMER_Countries">
+        <MappingFragment StoreEntitySet="XLSX_CMER_Countries">
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XLSX_CMER_Regions">
+      <EntityTypeMapping TypeName="CMER_DWModel.XLSX_CMER_Regions">
+        <MappingFragment StoreEntitySet="XLSX_CMER_Regions">
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XLSX_CMER_Segments">
+      <EntityTypeMapping TypeName="CMER_DWModel.XLSX_CMER_Segments">
+        <MappingFragment StoreEntitySet="XLSX_CMER_Segments">
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XLSX_CMER_Sources">
+      <EntityTypeMapping TypeName="CMER_DWModel.XLSX_CMER_Sources">
+        <MappingFragment StoreEntitySet="XLSX_CMER_Sources">
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XLSX_CMER_Transactions">
+      <EntityTypeMapping TypeName="CMER_DWModel.XLSX_CMER_Transactions">
+        <MappingFragment StoreEntitySet="XLSX_CMER_Transactions">
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="IDTRUType" ColumnName="IDTRUType" />
+          <ScalarProperty Name="IDSegment" ColumnName="IDSegment" />
+          <ScalarProperty Name="IDSupplier" ColumnName="IDSupplier" />
+          <ScalarProperty Name="IDCountrySupplier" ColumnName="IDCountrySupplier" />
+          <ScalarProperty Name="IDCustomer" ColumnName="IDCustomer" />
+          <ScalarProperty Name="IDRegion" ColumnName="IDRegion" />
+          <ScalarProperty Name="IDDate" ColumnName="IDDate" />
+          <ScalarProperty Name="IDSource" ColumnName="IDSource" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XLSX_CMER_TRUTypes">
+      <EntityTypeMapping TypeName="CMER_DWModel.XLSX_CMER_TRUTypes">
+        <MappingFragment StoreEntitySet="XLSX_CMER_TRUTypes">
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPlanFactLists">
+      <EntityTypeMapping TypeName="CMER_DWModel.vwPlanFactLists">
+        <MappingFragment StoreEntitySet="vwPlanFactLists">
+          <ScalarProperty Name="srcName" ColumnName="srcName" />
+          <ScalarProperty Name="truType" ColumnName="truType" />
+          <ScalarProperty Name="countryPName" ColumnName="countryPName" />
+          <ScalarProperty Name="countrySName" ColumnName="countrySName" />
+          <ScalarProperty Name="skpName" ColumnName="skpName" />
+          <ScalarProperty Name="kpvedName" ColumnName="kpvedName" />
+          <ScalarProperty Name="mkeeName" ColumnName="mkeeName" />
+          <ScalarProperty Name="katoPName" ColumnName="katoPName" />
+          <ScalarProperty Name="katoSName" ColumnName="katoSName" />
+          <ScalarProperty Name="ctgPName" ColumnName="ctgPName" />
+          <ScalarProperty Name="ctgSName" ColumnName="ctgSName" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="IDFact" ColumnName="IDFact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

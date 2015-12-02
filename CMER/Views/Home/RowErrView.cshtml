@@ -1,0 +1,329 @@
+﻿@model CMER.PlanFact_All
+
+
+<script src="~/Scripts/jquery-1.11.0.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+
+
+
+<link href="~/Content/JEasyUI/default/easyui.css" rel="stylesheet" />
+<link href="~/Content/JEasyUI/icon.css" rel="stylesheet" />
+
+<script src="~/Content/JEasyUI/jquery.easyui.min.js"></script>
+<style>
+    .row {
+    padding:5px 0;
+    }
+    .form-control{
+        width:auto;
+    }
+    .modal-lg {
+        width:auto;
+    }
+</style>
+@{
+    Layout = null;
+}
+@functions{
+    public string Valid(string ID, string Value)
+    {
+        var result = "bg-success";
+        if (Value != null && (ID == null||ID == string.Empty))
+            result = "bg-danger";
+        return result;
+    }
+    public bool BValid(string ID, string Value)
+    {
+        var result = false;
+        if (Value != null && (ID == null || ID == string.Empty))
+            result = true;
+        return result;
+    }
+}
+
+<script type="text/javascript">
+    $(function () {
+        $(".combogrid").each(function (i) {
+            var name = this.id;
+            $.get("/Home/Dic_list", { name: $("#" + name).data("id") }, function (data) {
+
+                $("#" + name).combogrid({
+                    panelWidth: 500,
+                    url: '/Home/GetDic_List',
+                    idField: data.idField,
+                    textField: data.textField,
+                    mode: 'remote',
+                    pagination: true,
+                    fitColumns: true,
+                    columns: [data.colModel],
+                    onBeforeLoad: function (param) {
+                        param.name = data.dicname;
+                    },
+                    queryParams: {
+                        selid: $("#" + name).data("value")
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+
+                <form>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">Исходные</div>
+                        <div class="col-md-4">Корректировать</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IDFact)</div>
+                        <div class="col-md-4">@Html.DisplayFor(model => model.e.IDFact)</div>
+                        <div class="col-md-4">@Html.HiddenFor(model => model.e.IDFact)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"><label class="control-label">@Html.DisplayNameFor(model => model.e.Name)</label></div>
+                        <div class="col-md-4"><label class="control-label">@Html.DisplayFor(model => model.e.Name)</label></div>
+                        <div class="col-md-1">@*@Html.EditorFor(model => model.r.Name,  new { htmlAttributes = new { @class = "form-control" } })*@</div>
+                    </div>
+                        <div class="row @Valid(Model.e.IDKpved, Model.e.ValueKpved)">
+                            <div class="col-md-2"><label class="control-label">@Html.DisplayNameFor(model => model.e.IDKpved)</label></div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.IDKpved)</label></div>
+                            <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.ValueKpved)</label></div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-1"><input id="IDKpved" class="combogrid" data-id="IDKpved" data-value="@Model.e.IDKpved" data-valid="@BValid(Model.e.IDKpved, Model.e.ValueKpved)"></input></div>
+                            <div class="col-md-1"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.Qty)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.Qty)</div>
+                            <div class="col-md-4">@Html.EditorFor(model => model.r.Qty, new { htmlAttributes = new { @class = "form-control" } })</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.Volume)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.Volume)</div>
+                            <div class="col-md-4">@Html.EditorFor(model => model.r.Volume, new { htmlAttributes = new { @class = "form-control" } })</div>
+                        </div>
+                    <div class="row @Valid(Model.e.IDMkee, Model.e.ValueMkee)">
+                        <div class="col-md-2"><label class="control-label">@Html.DisplayNameFor(model => model.e.IDMkee)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.IDMkee)</label></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.ValueMkee)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><input id="IDMkee" class="combogrid" data-id="IDMkee" data-value="@Model.e.IDMkee" data-valid="@BValid(Model.e.IDMkee, Model.e.ValueMkee)"></input></div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row @Valid(Model.e.IDKatoPurchaser, Model.e.ValueKatoPurchaser)">
+                        <div class="col-md-2"><label class="control-label">@Html.DisplayNameFor(model => model.e.IDKatoPurchaser)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.IDKatoPurchaser)</label></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.ValueKatoPurchaser)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><input id="IDKatoPurchaser" class="combogrid" data-id="IDKato" data-value="@Model.e.IDKatoPurchaser" data-valid="@BValid(Model.e.IDKatoPurchaser, Model.e.ValueKatoPurchaser)"></input></div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="row @Valid(Model.e.IDKatoSupplier, Model.e.ValueKatoSupplier)">
+                        <div class="col-md-2"><label class="control-label">@Html.DisplayNameFor(model => model.e.IDKatoSupplier)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.IDKatoSupplier)</label></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.ValueKatoSupplier)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><input id="IDKatoSupplier" class="combogrid" data-id="IDKato" data-value="@Model.e.IDKatoSupplier" data-valid="@BValid(Model.e.IDKatoSupplier, Model.e.ValueKatoSupplier)"></input></div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row @Valid(Model.e.IDKatoDelivery, Model.e.ValueKatoDelivery)">
+                        <div class="col-md-2"><label class="control-label">@Html.DisplayNameFor(model => model.e.IDKatoDelivery)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.IDKatoDelivery)</label></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.ValueKatoDelivery)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><input id="IDKatoDelivery" class="combogrid" data-id="IDKato" data-value="@Model.e.IDKatoDelivery" data-valid="@BValid(Model.e.IDKatoDelivery, Model.e.ValueKatoDelivery)"></input></div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IDContragentPurchaser)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.IDContragentPurchaser)</div>
+                            <div class="col-md-4"><input id="IDContragentPurchaser" class="combogrid" data-id="IDContragents" data-value="@Model.e.IDContragentPurchaser"></input></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IDContragentSupplier)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.IDContragentSupplier)</div>
+                            <div class="col-md-4"><input id="IDContragentSupplier" class="combogrid" data-id="IDContragents" data-value="@Model.e.IDContragentSupplier"></input></div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IDSource)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.IDSource)</div>
+                            <div class="col-md-4"><input id="IDSource" class="combogrid" data-id="IDSource" data-value="@Model.e.IDSource"></input></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.DateStart)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.DateStart)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.DateEnd)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.DateEnd)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IDTypePlanFact)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.IDTypePlanFact)</div>
+                            <div class="col-md-4"><input id="IDTypePlanFact" class="combogrid" data-id="IDTypePlanFact" data-value="@Model.e.IDTypePlanFact"></input></div>
+                        </div>
+                    <div class="row @Valid(Model.e.IDSkp, Model.e.ValueSkp)">
+                        <div class="col-md-2"><label class="control-label">@Html.DisplayNameFor(model => model.e.IDSkp)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.IDSkp)</label></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.ValueSkp)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><input id="IDSkp" class="combogrid" data-id="IDSkp" data-value="@Model.e.IDSkp" data-valid="@BValid(Model.e.IDSkp, Model.e.ValueSkp)"></input></div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.KS)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.KS)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IDCertificate)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.IDCertificate)</div>
+                            <div class="col-md-4"><input id="IDCertificate" class="combogrid" data-id="IDCertificate" data-value="@Model.e.IDCertificate"></input></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.NumCertificate)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.NumCertificate)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        @*<div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IDEns)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.IDEns)</div>
+                            <div class="col-md-4">@Html.DropDownList("r.IDEns", new SelectList(Model.Dic_Ens.Select(x => new { Value = x.ID, Text = x.FileName }), "Value", "Text"), new { @class = "form-control" })</div>
+                        </div>*@
+                    <div class="row @Valid(Model.e.IDTnved, Model.e.ValueTnved)">
+                        <div class="col-md-2"><label class="control-label">@Html.DisplayNameFor(model => model.e.IDTnved)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.IDTnved)</label></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.ValueTnved)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><input id="IDTnved" class="combogrid" data-id="IDTnved" data-value="@Model.e.IDTnved" data-valid="@BValid(Model.e.IDTnved, Model.e.ValueTnved)"></input></div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.CreatedDate)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.CreatedDate)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.UpdatedDate)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.UpdatedDate)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.FilePath)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.FilePath)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.RowNumber)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.RowNumber)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.SerialCertificate)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.SerialCertificate)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.OtpLastYear)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.OtpLastYear)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        @*<div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IDCertificateDetail)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.IDCertificateDetail)</div>
+                            <div class="col-md-4">@Html.DropDownList("r.IDCertificateDetail", new SelectList(Model.Dic_CertificatesDetail.Select(x => new { Value = x.ID, Text = x.IDCertificate }), "Value", "Text"), new { @class = "form-control" })</div>
+                        </div>*@
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.DateReportStart)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.DateReportStart)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IssetInSource)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.IssetInSource)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.DateReportEnd)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.DateReportEnd)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.ContractNumber)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.ContractNumber)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.ErrorMessage)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.ErrorMessage)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.VolumeWNds)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.VolumeWNds)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.Nds)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.Nds)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.ErrorCode)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.ErrorCode)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.ErrorColumn)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.ErrorColumn)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                    <div class="row @Valid(Model.e.IDCountryPurchaser, Model.e.ValueCountryPurchaser)">
+                        <div class="col-md-2"><label class="control-label">@Html.DisplayNameFor(model => model.e.IDCountryPurchaser)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.IDCountryPurchaser)</label></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.ValueCountryPurchaser)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><input id="IDCountryPurchaser" class="combogrid" data-id="IDCountries" data-value="@Model.e.IDCountryPurchaser" data-valid="@BValid(Model.e.IDCountryPurchaser, Model.e.ValueCountryPurchaser)"></input></div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+
+                    <div class="row @Valid(Model.e.IDCountrySupplier, Model.e.ValueCountrySupplier)">
+                        <div class="col-md-2"><label class="control-label">@Html.DisplayNameFor(model => model.e.IDCountrySupplier)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.IDCountrySupplier)</label></div>
+                        <div class="col-md-1"><label class="control-label">@Html.DisplayFor(model => model.e.ValueCountrySupplier)</label></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-1"><input id="IDCountrySupplier" class="combogrid" data-id="IDCountries" data-value="@Model.e.IDCountrySupplier" data-valid="@BValid(Model.e.IDCountrySupplier, Model.e.ValueCountrySupplier)"></input></div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                        <div class="row">
+                            <div class="col-md-4">@Html.DisplayNameFor(model => model.e.IdOriginal)</div>
+                            <div class="col-md-4">@Html.DisplayFor(model => model.e.IdOriginal)</div>
+                            <div class="col-md-4"></div>
+                        </div>
+                    <div class="row"><button class="btn">Сохранить</button></div>
+</form>
+           
+

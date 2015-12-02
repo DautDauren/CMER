@@ -1,0 +1,478 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAce.cshtml";
+}
+<style>
+.modal-content {
+    width: 550px;
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+    .cell_hover {
+        background-color:yellow!important;
+    }
+    .ui-state-highlight {
+    background: #fbec88 repeat-x scroll 50% 50%;
+    border: 1px solid #fad42e;
+    color: #363636;
+    }
+    .modal {
+        width:700px;
+        height:550px
+    }
+    .modal-body {
+        max-height:450px;
+    }
+    #searhModal {
+    height: 30px;
+}
+    .input-medium {
+        height: 30px!important;
+    }
+</style>
+@section scripts{
+    <!-- The jQuery library is a prerequisite for all jqSuite products -->
+    @*<script src="~/Scripts/jquery-1.11.0.min.js"></script>*@
+    <!-- We support more than 40 localizations -->
+<script src="~/Scripts/moment.min.js"></script>
+<script src="~/Content/bootstrap-datepicker.js"></script>
+
+    <script src="~/Content/JqGrid/grid.locale-ru.js"></script>
+    <!-- This is the Javascript file of jqGrid -->
+    <script src="~/Content/JqGrid/jquery.jqGrid.min.js"></script>
+    <!-- This is the localization file of the grid controlling messages, labels, etc.
+    <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+    <!-- The link to the CSS that the grid needs -->
+   
+
+    <link href="~/Content/JqGrid/ui.jqgrid-bootstrap.css" rel="stylesheet" />
+    <script>
+        $.jgrid.defaults.width = $(".page-content").width();
+        $.jgrid.defaults.responsive = true;
+      
+    </script>
+<script type="text/javascript">
+   
+    $(document).ready(function () {
+        var w = $(".page-content").width();
+        $("#jqGrid").jqGrid({
+            url: '/Grid/GetData',
+            mtype: "GET",
+            styleUI: 'Bootstrap',
+            datatype: "json",
+            sortname: 'IDFact',
+            colModel: [
+                {
+                    label: 'ID', name: 'IDFact', key: true, width: 100,
+                    sorttype: 'integer', type: 'key'
+                },
+                { label: 'Наименование', name: 'Name', width: 150, type: 'text' },
+                { label: 'Кол-во', name: 'Qty', width: 150, type: 'integer' },
+                { label: 'Стоимость', name: 'Volume', width: 150, type: 'integer' },
+                {
+                    label: 'Дата начала договора', name: 'DateStart', width: 150, formatter: DateFormat,
+                    sorttype: 'date',
+                    type: 'date',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).datepicker({
+                                autoclose: true,
+                                format: 'mm.dd.yyyy',
+                                orientation : 'bottom'
+                            });
+                        }
+                    }
+                },
+                {
+                    label: 'Дата окончания договора', name: 'DateEnd', width: 150, formatter: DateFormat,
+                    sorttype: 'date',
+                    type: 'date',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).datepicker({
+                                autoclose: true,
+                                format: 'dd.mm.yyyy',
+                                orientation: 'bottom'
+                            });
+                        }
+                    }
+                },
+                { label: 'Наименование по КПВЭД', name: 'kpvedName', dicname: 'IDKpved', width: 150, type:'list' },
+                { label: 'Заказчик', name: 'ctgSName', dicname: 'IDContragents', width: 150, type: 'list' },
+                { label: 'Поставщик', name: 'ctgPName', dicname: 'IDContragents', width: 150, type: 'list' },
+                { label: 'Местонахождение заказчика', name: 'katoSName', dicname: 'IDKato', width: 150, type: 'list' },
+                { label: 'Местонахождение поставщика', name: 'katoPName', dicname: 'IDKato', width: 150, type: 'list' },
+                { label: 'Ед. Измерения', name: 'mkeeName', dicname: 'IDMkee', width: 150, type: 'list' },
+                { label: 'Наименование по СКП', name: 'skpName', dicname: 'IDSkp', width: 150, type: 'list' },
+                { label: 'Страна поставщика', name: 'countrySName', dicname: 'IDCountries', width: 150, type: 'list' },
+                { label: 'Страна заказчика', name: 'countryPName', dicname: 'IDCountries', width: 150, type: 'list' },
+                {
+                    label: 'Тип ТРУ', name: 'truType', width: 150, dicname: 'IDTRUType', type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, typeahead) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicList',
+                                        dataType: "json",
+                                        data: { column: "IDTRUType", search: query },
+                                        success: function (data) {
+                                            var items = [], map = {};
+                                            $.each(data, function (i, item) {
+                                                map[items.name] = item;
+                                                items.push(item.name);
+                                            });
+                                            return typeahead(items);
+                                        },
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+
+                },
+                { label: 'Источник', name: 'srcName', width: 150, dicname: 'IDSource', type: 'list' },
+            ],
+            viewrecords: true,
+            height: 500,
+            width:w,
+            rowNum: 20,
+            scroll: 1,
+            //postData: { sidx: 'IDFact' },
+            pager: "#jqGridPager",
+            onCellSelect: function (rowId, iCol, content, event) {
+                SelectCell(rowId, iCol, content, event);
+                //alert(rowId + " " + iCol + " " + content + "" + event);
+            },
+            loadComplete: function () {
+                $("td[role='gridcell']").hover(function () {
+                    $(this).addClass("cell_hover");
+                }, function () {
+                    $(this).removeClass("cell_hover");
+                });
+
+                $("#jqGrid").jqGrid("setGridWidth", $(".page-content").width(), true);
+            },
+            //mySelection: {},
+            //beforeSelectRow: function (rowid, e) {
+            //    var $td = $(e.target).closest("td"),
+            //        iCol = $.jgrid.getCellIndex($td[0]),
+            //        p = $(this).jqGrid("getGridParam"), // object with all parameters
+            //        cm = p.colModel[iCol],
+            //        key = rowid + "_" + cm.name,
+            //        id = $.jgrid.stripPref(p.idPrefix, rowid);
+
+            //    if (p.mySelection[key] === undefined || !$td.hasClass("ui-state-highlight")) {
+            //        $td.addClass("ui-state-highlight").attr("aria-selected", "true");
+            //        p.mySelection[key] = {
+            //            id: id,
+            //            colName: cm.name,
+            //            indexOfColumn: iCol,
+            //            htmlValue: $td.html(),
+            //            value: $.unformat.call(this, $td[0], { rowId: rowid, colModel: cm }, iCol)
+            //        };
+            //    } else {
+            //        $td.removeClass("ui-state-highlight").removeAttr("aria-selected");
+            //        delete p.mySelection[key];
+            //    }
+
+            //    if ($.isFunction(p.onCellSelect)) {
+            //        p.onCellSelect.call(this, rowid, iCol, $td.html(), e);
+            //    }
+
+            //    return false; // swich of the standard selection
+            //},
+            //onInitGrid: function () {
+            //    if ($(this).jqGrid("getGridParam", "caption") === "") {
+            //        // fix upper coner of the grid if the grid have empty (no) caption
+            //        $(this.grid.hDiv).addClass("ui-corner-top");
+            //    }
+            //}
+        });
+
+        
+
+        // Search //
+        // activate the toolbar searching
+        //$('#jqGrid').jqGrid('filterToolbar');
+                    var template1 = 
+                        { "groupOp": "AND",
+                            "rules": [
+                              { "field": "IDFact", "op": "bw", "data": "W" },
+                              { "field": "Name", "op": "le", "data": "15" }
+                            ]
+                        };
+
+                    var template2 =
+                    { "groupOp": "AND",
+                        "rules": [
+                          { "field": "Name", "op": "eq", "data": "Hanari Carnes" },
+                          { "field": "IDFact", "op": "le", "data": "10255" }
+                        ]
+                    }; 
+                    // activate the build in search with multiple option
+                    $('#jqGrid').navGrid("#jqGridPager", {                
+                        search: true, // show search button on the toolbar
+                        add: false,
+                        edit: false,
+                        del: false,
+                        refresh: true
+                    },
+                    {}, // edit options
+                    {}, // add options
+                    {}, // delete options
+                    { 
+                        multipleSearch: true, 
+                        multipleGroup: true, 
+                        showQuery: true,
+                        // set the names of the template
+                       // tmplNames: ["Template One", "Template Two"],
+                        // set the template contents
+                       // tmplFilters: [template1, template2] 				
+                    } // search options - define multiple search
+                    );
+        // End Search //
+                    
+                   
+    });
+   
+    function formatRating(cellValue, options, rowObject) {
+        var color = (parseInt(cellValue) > 0) ? "green" : "red";
+        var cellHtml = "<span style='color:" + color + "' originalValue='" +
+                             cellValue + "'>" + cellValue + "</span>";
+
+        return cellHtml;
+    }
+    function DateFormat(cellValue, options, rowObject) {
+        return moment(cellValue).format('DD.MM.YYYY');
+    }
+    var dicname, rowID,selID, isdate;
+    function Choose()
+    {
+        var grid = $("#jqGridModal");
+        var rowKey = grid.jqGrid('getGridParam', "selrow");
+        
+        if (rowKey) {
+            $.post("/Grid/PostRawCell", { column: dicname, rowID: rowID, id: rowKey }, function () {
+                $('#modal-table').modal('hide');
+                $('#jqGrid').trigger("reloadGrid");
+            });
+        }
+        else
+            alert("Не выбрана строка");
+    }
+    function Save() {
+        var selValue = $("#dateModal").val();
+        if (selValue) {
+            if (isdate) {
+                $.post("/Grid/PostRawCellDate", { column: dicname, rowID: rowID, id: moment(selValue, "DD.MM.YYYY").format("DD/MM/YYYY") }, function () {
+                    $('#modal-date').modal('hide');
+                    $('#jqGrid').trigger("reloadGrid");
+                });
+            } else {
+                $.post("/Grid/PostRawCellValue", { column: dicname, rowID: rowID, id: selValue }, function () {
+                    $('#modal-date').modal('hide');
+                    $('#jqGrid').trigger("reloadGrid");
+                });
+            }
+        }
+        else
+            alert("пусто");
+
+    }
+    function SelectCell(rowId, iCol, content, event)
+    {
+        var p = $("#jqGrid").jqGrid("getGridParam"), // object with all parameters
+          cm = p.colModel[iCol];
+        console.log(rowId);
+        console.log(cm);
+        dicname = cm.name;
+        rowID = rowId;
+        if(cm.type == 'list'){
+        $("#LabelModlal").text(cm.label);
+        $("#ValueModlal").text(content);
+        $.get("/Grid/GetDicModel", { column: cm.dicname }, function (data, status) {
+            $("#jqGridModal").jqGrid({
+                url: '/Grid/GetDicData',
+                mtype: "GET",
+                styleUI: 'Bootstrap',
+                datatype: "json",
+                colModel: data.colModel,
+                width:680,
+                height: 300,
+                rowNum: 15,
+                viewrecords: true,
+                scroll: 1,
+                postData: { Name: cm.dicname },
+                emptyrecords:"",
+                pager: "#jqGridPagerModal"
+
+            });
+            var items = [], map = {};
+            $("#searhModal").attr("autocomplete", "off").typeahead({
+                appendTo: "body",
+                source: function (query, typeahead) {                  
+                    return $.get('/Grid/GetDicData', { Name: cm.dicname, search: query }, function (data) {
+                        $('#jqGridModal').jqGrid('clearGridData');
+                        $('#jqGridModal').jqGrid('setGridParam', { datatype: 'local', data: data }).trigger("reloadGrid");
+                        //$('#jqGridModal').trigger('reloadGrid');
+                    }, "json");
+                },
+                items: 15,
+                minLength: 3
+            });
+              
+
+            $('#modal-table').modal('show');
+            $("#searhModal").text(""); $("#searhModal").val("");
+            //$('#modal-table').toggleClass('hide');
+            $('#modal-table').on("hidden.bs.modal", function (e) { $.jgrid.gridUnload("jqGridModal"); $.jgrid.gridDestroy("jqGridModal"); });
+        });
+        } else if (cm.type == 'date') {
+            isdate = true;
+            $("#LabelModlaldate").text(cm.label);
+            $("#ValueModlaldate").text(content);
+            if (cm.type == 'date') {
+                $("#dateModal").datepicker({
+                    autoclose: true,
+                    format: 'dd.mm.yyyy',
+                    orientation: 'bottom'
+                });
+            }
+            else {
+                $("#dateModal").datepicker('remove');
+            }
+
+            $('#modal-date').modal('show');
+            $('#modal-table').on("hidden.bs.modal", function (e) { $("#dateModal").datepicker('remove'); $("#dateModal").val(""); });
+            
+        } else if (cm.type == 'integer') {
+            isdate = false;
+            $("#LabelModlaldate").text(cm.label);
+            $("#ValueModlaldate").text(content);
+            $("#dateModal").datepicker('remove');
+            $("#dateModal").val("");
+
+            $('#modal-date').modal('show');
+            $('#modal-table').on("hidden.bs.modal", function (e) { });
+        }
+        
+    }
+
+    
+    function ShowData() {
+        var cellInfo = [], key, item, mySelection = $('#jqGrid').jqGrid("getGridParam", "mySelection");
+
+        for (key in mySelection) {
+            item = mySelection[key];
+            cellInfo.push("id=" + item.id +
+                ", colName=" + item.colName +
+                ", indexOfColumn=" + item.indexOfColumn +
+                ", value=" + item.value +
+                ", htmlValue=" + item.htmlValue);
+        }
+
+        alert(cellInfo.join("\n"));
+    };
+</script>
+
+}
+    @*<script src="~/Scripts/bootstrap.min.js"></script>*@
+    <div style="margin-left:20px">
+        <table id="jqGrid"></table>
+        <div id="jqGridPager"></div>
+    </div>
+ 
+<div id="modal-table" class="modal fade" tabindex="-1">
+    <div class="modal-header no-padding">
+        <div class="table-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+           Выбрать
+        </div>
+    </div>
+
+    <div class="modal-body no-padding">
+        <div class="row-fluid">
+            <div class="span6"><span id="LabelModlal"></span></div>           
+        </div>
+        <div class="row-fluid">            
+            <div class="span6"><span id="ValueModlal"></span></div>
+            <div class="span2">Поиск</div>
+            <div class="span4">
+                <input id="searhModal" class="input-medium search-query" type="text">
+            </div>
+            </div>
+            <div class="row-fluid" id="modal-content">
+               
+                <div>
+                    <table id="jqGridModal"></table>
+                    <div id="jqGridPagerModal"></div>
+                </div>
+            </div>
+        </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-small btn-danger pull-left" data-dismiss="modal">
+            <i class="icon-remove"></i>
+            Закрыть
+        </button>
+        <button class="btn btn-small btn-success pull-right" onclick="Choose()">
+            <i class="icon-add"></i>
+            Выбрать
+        </button>
+    </div>
+</div>
+
+<div id="modal-date" class="modal fade" tabindex="-1">
+    <div class="modal-header no-padding">
+        <div class="table-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            Выбрать
+        </div>
+    </div>
+
+    <div class="modal-body no-padding">
+        <div class="row-fluid">
+            <div class="span6"><span id="LabelModlaldate"></span></div>
+        </div>
+        <div class="row-fluid">
+            <div class="span6"><span id="ValueModlaldate"></span></div>
+            <div class="span2"></div>
+            <div class="span4">
+                <input id="dateModal" class="input-medium" type="text">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-small btn-danger pull-left" data-dismiss="modal">
+            <i class="icon-remove"></i>
+            Закрыть
+        </button>
+        <button class="btn btn-small btn-success pull-right" onclick="Save()">
+            <i class="icon-add"></i>
+            Выбрать
+        </button>
+    </div>
+</div>
+
+
+

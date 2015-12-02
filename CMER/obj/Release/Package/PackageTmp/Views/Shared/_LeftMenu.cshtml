@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "_LeftMenu";
+    
+}
+
+<div class="left-menu">
+    
+    <div id="p" class="easyui-panel" title="Фильтры">
+        <p style="font-size:14px"></p>
+        <ul style="list-style-type:none">
+            <li>
+                <label for="FKpved">КПВЭД</label>
+                <select class="easyui-combobox" id="FKpved" name="state" style="width:200px;">
+                </select>
+            </li>
+            <li>
+                <label for="FPurchaser">Заказчик (БИН, Наименование, КАТО)</label>
+                <input class="easyui-textbox" id="FPurchaser" style="width:100%;">
+            </li>
+            <li>
+                <label for="FSupplier">Поставщик (БИН, Наименование, КАТО)</label>
+                <input class="easyui-textbox" id="FSupplier" style="width:100%;">
+            </li>
+            <li>
+                
+                <label for="FVolume">Стоимость </label>
+                <label for="FVolumeFrom">от</label>
+                <input class="easyui-textbox" id="FVolumeFrom" style="width:50px;">
+                <label for="FVolumeFrom">до</label>
+                <input class="easyui-textbox" id="FVolumeTo" style="width:50px;">
+            </li>
+        </ul>
+    </div>
+</div>

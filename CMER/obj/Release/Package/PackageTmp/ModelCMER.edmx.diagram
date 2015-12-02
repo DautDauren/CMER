@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0570749a0b3b4ebc93adf79da7fe4fca" Name="Diagram1" ZoomLevel="46">
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Certificates" Width="1.5" PointX="0.75" PointY="51.875" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Certificates_" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_CertificatesDetail" Width="1.5" PointX="3" PointY="41.5" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_CertificatesNEW" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Contragents" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_ContragentsCl" Width="1.5" PointX="0.75" PointY="31.25" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Countries" Width="1.5" PointX="0.75" PointY="45.875" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Ens" Width="1.5" PointX="0.75" PointY="23.375" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Kato" Width="1.5" PointX="0.75" PointY="60" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Kpved" Width="1.5" PointX="0.75" PointY="38.625" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Mkee" Width="1.5" PointX="0.75" PointY="28.375" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Oked" Width="1.5" PointX="5.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Skp" Width="1.5" PointX="0.75" PointY="18.125" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Source" Width="1.5" PointX="0.75" PointY="15.75" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_Tnved" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_TRUType" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_TRUType_" Width="1.5" PointX="0.75" PointY="43.5" />
+        <EntityTypeShape EntityType="CMER_DWModel.Dic_TypePlanFact" Width="1.5" PointX="0.75" PointY="49.5" />
+        <EntityTypeShape EntityType="CMER_DWModel.dimDate" Width="1.5" PointX="0.75" PointY="10.375" />
+        <EntityTypeShape EntityType="CMER_DWModel.PlanFact" Width="1.5" PointX="3" PointY="4.625" />
+        <EntityTypeShape EntityType="CMER_DWModel.PlanFact_Err" Width="1.5" PointX="10.75" PointY="9.75" />
+        <EntityTypeShape EntityType="CMER_DWModel.XLSX_CMER_Contragents" Width="1.5" PointX="3.75" PointY="30.375" />
+        <EntityTypeShape EntityType="CMER_DWModel.XLSX_CMER_Countries" Width="1.5" PointX="3.75" PointY="1.375" />
+        <EntityTypeShape EntityType="CMER_DWModel.XLSX_CMER_Regions" Width="1.5" PointX="3.75" PointY="32.875" />
+        <EntityTypeShape EntityType="CMER_DWModel.XLSX_CMER_Segments" Width="1.5" PointX="3.75" PointY="21.75" />
+        <EntityTypeShape EntityType="CMER_DWModel.XLSX_CMER_Sources" Width="1.5" PointX="3.75" PointY="28" />
+        <EntityTypeShape EntityType="CMER_DWModel.XLSX_CMER_Transactions" Width="1.5" PointX="6" PointY="10.125" />
+        <EntityTypeShape EntityType="CMER_DWModel.XLSX_CMER_TRUTypes" Width="1.5" PointX="3.75" PointY="24.625" />
+        <AssociationConnector Association="CMER_DWModel.FK_Dic_CertificatesDetail_Dic_Certificates" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_Certificates_" />
+        <AssociationConnector Association="CMER_DWModel.FK_Dic_CertificatesDetail_Dic_Mkee" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_ContragentsClPurchaser_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_ContragentsClSuppliers_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_Countries_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_CountriesSupplier_" />
+        <AssociationConnector Association="CMER_DWModel.FK_Dic_Ens_Dic_Ens" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_Ens_" />
+        <AssociationConnector Association="CMER_DWModel.FK_Dic_Kato_Dic_Kato" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_KatoDelivery_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_KatoPurchaser_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_KatoSupplier_" />
+        <AssociationConnector Association="CMER_DWModel.FK_Dic_Kpved_Dic_Kpved" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_Kpved_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_Mkee_" />
+        <AssociationConnector Association="CMER_DWModel.FK_Dic_Skp_Dic_Skp" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_Skp_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_Source_" />
+        <AssociationConnector Association="CMER_DWModel.FK_Dic_Tnved_Dic_Tnved" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact__Dic_TRUType_2" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_Dic_TypePlanFact_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_dimDateEnd_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_dimDateReportEnd_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_dimDateReportStart_" />
+        <AssociationConnector Association="CMER_DWModel.FK_PlanFact_dimDateStart_" />
+        <AssociationConnector Association="CMER_DWModel.FK_XLSX_CMER_Transactions_dimDate" />
+        <AssociationConnector Association="CMER_DWModel.FK_XLSX_CMER_Transactions_XLSX_CMER_Contragents" />
+        <AssociationConnector Association="CMER_DWModel.FK_XLSX_CMER_Transactions_XLSX_CMER_Contragents1" />
+        <AssociationConnector Association="CMER_DWModel.FK_XLSX_CMER_Transactions_XLSX_CMER_Countries" />
+        <AssociationConnector Association="CMER_DWModel.FK_XLSX_CMER_Transactions_XLSX_CMER_Regions" />
+        <AssociationConnector Association="CMER_DWModel.FK_XLSX_CMER_Segments_XLSX_CMER_Segments" />
+        <AssociationConnector Association="CMER_DWModel.FK_XLSX_CMER_Transactions_XLSX_CMER_Segments" />
+        <AssociationConnector Association="CMER_DWModel.FK_XLSX_CMER_Transactions_XLSX_CMER_Sources" />
+        <AssociationConnector Association="CMER_DWModel.FK_XLSX_CMER_Transactions_XLSX_CMER_TRUTypes" />
+        <EntityTypeShape EntityType="CMER_DWModel.vwPlanFactLists" Width="1.5" PointX="13.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

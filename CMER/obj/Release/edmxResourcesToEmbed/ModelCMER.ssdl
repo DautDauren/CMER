@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CMER_DWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dic_Certificates">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KatoRef" Type="int" />
+    <Property Name="Дата сертификата" Type="datetime" />
+    <Property Name="Наименование экспортера рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование экспортера каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес экспортера рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес экспортера каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="БИН экспортера" Type="nvarchar" MaxLength="255" />
+    <Property Name="КАТО" Type="nvarchar" MaxLength="255" />
+    <Property Name="Организационно-правовая форма рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Организационно-правовая форма каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="www" Type="nvarchar" MaxLength="255" />
+    <Property Name="tel" Type="nvarchar" MaxLength="255" />
+    <Property Name="ФИО руководителя" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование импортера рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование импортера каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес импортера" Type="nvarchar" MaxLength="255" />
+    <Property Name="БИН импортера" Type="nvarchar" MaxLength="255" />
+    <Property Name="Заявитель" Type="nvarchar" MaxLength="255" />
+    <Property Name="Транспорт" Type="nvarchar" MaxLength="255" />
+    <Property Name="Основание для выдачи" Type="nvarchar" MaxLength="255" />
+    <Property Name="ФИО" Type="nvarchar" MaxLength="255" />
+    <Property Name="Код органа выдачи" Type="float" />
+    <Property Name="Наименование органа выдачи" Type="nvarchar" MaxLength="255" />
+    <Property Name="Номер сертификата" Type="nvarchar" MaxLength="255" />
+    <Property Name="Серия сертификата" Type="nvarchar" MaxLength="255" />
+    <Property Name="lfn" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="Wrong" Type="int" />
+  </EntityType>
+  <EntityType Name="Dic_Certificates_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KatoRef" Type="int" />
+    <Property Name="MkeeRef" Type="int" />
+    <Property Name="KpvedRef" Type="int" />
+    <Property Name="TnvedRef" Type="int" />
+    <Property Name="Дата сертификата" Type="datetime" />
+    <Property Name="Наименование экспортера рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование экспортера каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес экспортера рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес экспортера каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="БИН экспортера" Type="nvarchar" MaxLength="255" />
+    <Property Name="КАТО" Type="nvarchar" MaxLength="255" />
+    <Property Name="Организационно-правовая форма рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Организационно-правовая форма каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="www" Type="nvarchar" MaxLength="255" />
+    <Property Name="tel" Type="nvarchar" MaxLength="255" />
+    <Property Name="ФИО руководителя" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование импортера рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование импортера каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес импортера" Type="nvarchar" MaxLength="255" />
+    <Property Name="БИН импортера" Type="nvarchar" MaxLength="255" />
+    <Property Name="Заявитель" Type="nvarchar" MaxLength="255" />
+    <Property Name="Транспорт" Type="nvarchar" MaxLength="255" />
+    <Property Name="Основание для выдачи" Type="nvarchar" MaxLength="255" />
+    <Property Name="ФИО" Type="nvarchar" MaxLength="255" />
+    <Property Name="ТНВЭД" Type="nvarchar" MaxLength="255" />
+    <Property Name="КПВЭД" Type="nvarchar" MaxLength="255" />
+    <Property Name="Упаковка" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование товара рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование товара каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="Доля КС %" Type="float" />
+    <Property Name="Вес нетто брутто" Type="nvarchar" MaxLength="255" />
+    <Property Name="Кол-во" Type="float" />
+    <Property Name="МКЕИ" Type="nvarchar" MaxLength="255" />
+    <Property Name="Цена за 1 ед" Type="float" />
+    <Property Name="Код органа выдачи" Type="float" />
+    <Property Name="Наименование органа выдачи" Type="nvarchar" MaxLength="255" />
+    <Property Name="Номер сертификата" Type="nvarchar" MaxLength="255" />
+    <Property Name="Серия сертификата" Type="nvarchar" MaxLength="255" />
+    <Property Name="lfn" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="Wrong" Type="int" />
+  </EntityType>
+  <EntityType Name="Dic_CertificatesDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDCertificate" Type="int" Nullable="false" />
+    <Property Name="MkeeRef" Type="int" />
+    <Property Name="KpvedRef" Type="int" />
+    <Property Name="TnvedRef" Type="int" />
+    <Property Name="ТНВЭД" Type="nvarchar" MaxLength="255" />
+    <Property Name="КПВЭД" Type="nvarchar" MaxLength="255" />
+    <Property Name="Упаковка" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование товара рус" Type="nvarchar" MaxLength="255" />
+    <Property Name="Наименование товара каз" Type="nvarchar" MaxLength="255" />
+    <Property Name="Доля КС %" Type="float" />
+    <Property Name="Вес нетто брутто" Type="nvarchar" MaxLength="255" />
+    <Property Name="Кол-во" Type="float" />
+    <Property Name="МКЕИ" Type="nvarchar" MaxLength="255" />
+    <Property Name="Цена за 1 ед" Type="float" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowNumber" Type="int" />
+  </EntityType>
+  <EntityType Name="Dic_CertificatesNEW">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Наименование ОТП" Type="nvarchar" MaxLength="255" />
+    <Property Name="БИН" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDContragent" Type="int" />
+    <Property Name="IDKpved" Type="int" />
+    <Property Name="Регион" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес" Type="nvarchar" MaxLength="255" />
+    <Property Name="контактный телефон" Type="nvarchar" MaxLength="255" />
+    <Property Name="Производимая продукция(Описание)" Type="nvarchar" MaxLength="255" />
+    <Property Name="Код ЕНС ТРУ" Type="nvarchar" MaxLength="50" />
+    <Property Name="Код КП ВЭД" Type="nvarchar" MaxLength="50" />
+    <Property Name="Код ТНВЭД" Type="nvarchar" MaxLength="50" />
+    <Property Name="ДМС" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Номер сертификата СТ-KZ" Type="nvarchar" MaxLength="50" />
+    <Property Name="Дата выдачи сертификата" Type="nvarchar" MaxLength="50" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="DateReportStart" Type="datetime" />
+    <Property Name="DateReportEnd" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dic_Contragents">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BIN" Type="nvarchar" MaxLength="12" />
+    <Property Name="RNN" Type="nvarchar" MaxLength="12" />
+    <Property Name="NameRu" Type="nvarchar" MaxLength="1255" />
+    <Property Name="NameKz" Type="nvarchar" MaxLength="1255" />
+    <Property Name="AdressJur" Type="nvarchar" MaxLength="255" />
+    <Property Name="AdressFact" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phones" Type="nvarchar" MaxLength="255" />
+    <Property Name="IDOked" Type="int" />
+    <Property Name="ShorNameRu" Type="nvarchar" MaxLength="255" />
+    <Property Name="ShorNameKz" Type="nvarchar" MaxLength="255" />
+    <Property Name="IDCountry" Type="int" />
+    <Property Name="IDKato" Type="int" />
+    <Property Name="IDKrp" Type="int" />
+    <Property Name="IDOriginal" Type="int" Nullable="false" />
+    <Property Name="IDDuble" Type="int" />
+    <Property Name="TableSource" Type="nvarchar" MaxLength="150" />
+    <Property Name="ColumnID" Type="nvarchar" MaxLength="255" />
+    <Property Name="TypeContragent" Type="int" />
+  </EntityType>
+  <EntityType Name="Dic_ContragentsCl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="BIN" Type="nvarchar" MaxLength="12" />
+    <Property Name="RNN" Type="nvarchar" MaxLength="12" />
+    <Property Name="NameRu" Type="nvarchar" MaxLength="1255" />
+    <Property Name="NameKz" Type="nvarchar" MaxLength="1255" />
+    <Property Name="AdressJur" Type="nvarchar" MaxLength="255" />
+    <Property Name="AdressFact" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phones" Type="nvarchar" MaxLength="255" />
+    <Property Name="IDOked" Type="int" />
+    <Property Name="ShorNameRu" Type="nvarchar" MaxLength="255" />
+    <Property Name="ShorNameKz" Type="nvarchar" MaxLength="255" />
+    <Property Name="IDCountry" Type="int" />
+    <Property Name="IDKato" Type="int" />
+    <Property Name="IDKrp" Type="int" />
+    <Property Name="IDOriginal" Type="int" />
+    <Property Name="IDDuble" Type="int" />
+    <Property Name="TableSource" Type="nvarchar" MaxLength="150" />
+    <Property Name="ColumnID" Type="nvarchar" MaxLength="255" />
+    <Property Name="TypeContragent" Type="int" />
+    <Property Name="IINLeader" Type="nvarchar" MaxLength="12" />
+    <Property Name="IsOTP" Type="bit" />
+    <Property Name="FIOLeader" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsNationalCompany" Type="bit" />
+    <Property Name="IsInternationalCompany" Type="bit" />
+    <Property Name="DateRegister" Type="datetime" />
+    <Property Name="IsFalseBusinessman" Type="bit" />
+  </EntityType>
+  <EntityType Name="Dic_Countries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="Names" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Alfa2" Type="nvarchar" MaxLength="3" />
+    <Property Name="Alfa3" Type="nvarchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Dic_Ens">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypePurchase" Type="nvarchar" MaxLength="255" />
+    <Property Name="Label" Type="nvarchar" MaxLength="255" />
+    <Property Name="Kpved" Type="nvarchar" MaxLength="255" />
+    <Property Name="Unioncheck" Type="nvarchar" MaxLength="255" />
+    <Property Name="Name_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Descript" Type="nvarchar" MaxLength="255" />
+    <Property Name="Mkee_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Mkee_label" Type="nvarchar" MaxLength="255" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+    <Property Name="SheetName" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="IDKpved" Type="int" />
+  </EntityType>
+  <EntityType Name="Dic_Kato">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Label" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Name_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="tempParent" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentID" Type="int" />
+  </EntityType>
+  <EntityType Name="Dic_Kpved">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Label" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Unioncheck" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name_1" Type="nvarchar(max)" />
+    <Property Name="Name_2" Type="nvarchar(max)" />
+    <Property Name="IdTRUType" Type="int" />
+    <Property Name="Kpved_type_desc" Type="varchar" MaxLength="50" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="CountSymbols" Type="int" />
+    <Property Name="CodeMkee" Type="int" />
+    <Property Name="ValueMkee" Type="nvarchar" MaxLength="255" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="500" />
+    <Property Name="StandardName" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Dic_Mkee">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Label" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name_1" Type="nvarchar" MaxLength="500" />
+    <Property Name="Name_2" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Dic_Oked">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Label" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Name_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="tempParent" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentID" Type="int" />
+  </EntityType>
+  <EntityType Name="Dic_Skp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Label" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NameRu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NameKz" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Unit1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Unit2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Unit3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Unit4" Type="nvarchar" MaxLength="50" />
+    <Property Name="TypeTru" Type="int" />
+    <Property Name="Kpved" Type="nvarchar" MaxLength="50" />
+    <Property Name="Level" Type="int" />
+    <Property Name="ParentKod" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="IDParent" Type="int" />
+    <Property Name="IDKpved" Type="int" />
+  </EntityType>
+  <EntityType Name="Dic_Source">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Dic_Tnved">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Label" Type="nvarchar" MaxLength="255" />
+    <Property Name="Unioncheck" Type="nvarchar" MaxLength="255" />
+    <Property Name="Name_1" Type="nvarchar" MaxLength="500" />
+    <Property Name="Name_2" Type="nvarchar" MaxLength="500" />
+    <Property Name="Mkee" Type="nvarchar" MaxLength="50" />
+    <Property Name="ImportDuty" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentID" Type="int" />
+  </EntityType>
+  <EntityType Name="Dic_TRUType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Dic_TRUType_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Dic_TypePlanFact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="dimDate">
+    <Key>
+      <PropertyRef Name="IDDate" />
+    </Key>
+    <Property Name="IDDate" Type="datetime" Nullable="false" />
+    <Property Name="IDYear" Type="int" />
+    <Property Name="DescrYear" Type="nvarchar" MaxLength="10" />
+    <Property Name="IDSemester" Type="int" />
+    <Property Name="DescrSemester" Type="nvarchar" MaxLength="10" />
+    <Property Name="IDQuarter" Type="int" />
+    <Property Name="DescrQuarter" Type="nvarchar" MaxLength="10" />
+    <Property Name="IDMonth" Type="int" />
+    <Property Name="DescrMonth" Type="nvarchar" MaxLength="10" />
+    <Property Name="IDDay" Type="int" />
+    <Property Name="DescrDay" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PlanFact">
+    <Key>
+      <PropertyRef Name="IDFact" />
+    </Key>
+    <Property Name="IDFact" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDKpved" Type="int" />
+    <Property Name="Qty" Type="numeric" Precision="18" Scale="5" />
+    <Property Name="Volume" Type="numeric" Precision="18" Scale="5" />
+    <Property Name="IDMkee" Type="int" />
+    <Property Name="IDKatoPurchaser" Type="int" />
+    <Property Name="IDKatoSupplier" Type="int" />
+    <Property Name="IDKatoDelivery" Type="int" />
+    <Property Name="IDContragentPurchaser" Type="int" Nullable="false" />
+    <Property Name="IDContragentSupplier" Type="int" />
+    <Property Name="IDSource" Type="int" Nullable="false" />
+    <Property Name="DateStart" Type="datetime" />
+    <Property Name="DateEnd" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="IDTypePlanFact" Type="int" Nullable="false" />
+    <Property Name="IDSkp" Type="int" />
+    <Property Name="KS" Type="float" />
+    <Property Name="IDCertificate" Type="int" />
+    <Property Name="NumCertificate" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDEns" Type="int" />
+    <Property Name="IDTnved" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="SerialCertificate" Type="nvarchar" MaxLength="50" />
+    <Property Name="OtpLastYear" Type="int" />
+    <Property Name="IDCertificateDetail" Type="int" />
+    <Property Name="DateReportStart" Type="datetime" />
+    <Property Name="IssetInSource" Type="int" />
+    <Property Name="DateReportEnd" Type="datetime" />
+    <Property Name="ContractNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdCountrySupplier" Type="int" />
+    <Property Name="IdCountryPurchaser" Type="int" />
+    <Property Name="VolumeWNds" Type="numeric" Precision="18" Scale="5" />
+    <Property Name="Nds" Type="numeric" Precision="18" Scale="5" />
+    <Property Name="IDFactErr" Type="int" />
+    <Property Name="IDKpvedTRU" Type="int" />
+    <Property Name="KSSum" Type="numeric" Precision="18" Scale="5" />
+    <Property Name="ErrorCode" Type="nvarchar" MaxLength="255" />
+    <Property Name="ErrorColumn" Type="nvarchar" MaxLength="255" />
+    <Property Name="ValueMkee" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueKatoDelivery" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueKatoPurchaser" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueKatoSupplier" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueCountrySupplier" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueCountryPurchaser" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueKpved" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueTnved" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueSkp" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueVolume" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueQty" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ValueDateStart" Type="nvarchar" MaxLength="500" />
+    <Property Name="ValueDateEnd" Type="nvarchar" MaxLength="500" />
+    <Property Name="IdOriginal" Type="int" />
+    <Property Name="TableName" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsError" Type="bit" />
+  </EntityType>
+  <EntityType Name="PlanFact_Err">
+    <Key>
+      <PropertyRef Name="IDFact" />
+    </Key>
+    <Property Name="IDFact" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDKpved" Type="nvarchar(max)" />
+    <Property Name="Qty" Type="nvarchar(max)" />
+    <Property Name="Volume" Type="nvarchar(max)" />
+    <Property Name="IDMkee" Type="nvarchar(max)" />
+    <Property Name="IDKatoDelivery" Type="nvarchar(max)" />
+    <Property Name="IDContragentPurchaser" Type="nvarchar(max)" />
+    <Property Name="IDContragentSupplier" Type="nvarchar(max)" />
+    <Property Name="IDSource" Type="nvarchar(max)" />
+    <Property Name="DateStart" Type="nvarchar(max)" />
+    <Property Name="DateEnd" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="IDTypePlanFact" Type="nvarchar(max)" />
+    <Property Name="IDSkp" Type="nvarchar(max)" />
+    <Property Name="KS" Type="nvarchar(max)" />
+    <Property Name="IDCertificate" Type="nvarchar(max)" />
+    <Property Name="NumCertificate" Type="nvarchar(max)" />
+    <Property Name="IDEns" Type="nvarchar(max)" />
+    <Property Name="IDTnved" Type="nvarchar(max)" />
+    <Property Name="ErrorMessage" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="nvarchar(max)" />
+    <Property Name="UpdatedDate" Type="nvarchar(max)" />
+    <Property Name="FilePath" Type="nvarchar(max)" />
+    <Property Name="RowNumber" Type="nvarchar(max)" />
+    <Property Name="SerialCertificate" Type="nvarchar(max)" />
+    <Property Name="OtpLastYear" Type="nvarchar(max)" />
+    <Property Name="IDCertificateDetail" Type="nvarchar(max)" />
+    <Property Name="DateReportStart" Type="nvarchar(max)" />
+    <Property Name="IssetInSource" Type="nvarchar(max)" />
+    <Property Name="DateReportEnd" Type="nvarchar(max)" />
+    <Property Name="ErrorCode" Type="nvarchar(max)" />
+    <Property Name="ErrorColumn" Type="nvarchar(max)" />
+    <Property Name="ContractNumber" Type="nvarchar(max)" />
+    <Property Name="IDKatoPurchaser" Type="nvarchar(max)" />
+    <Property Name="IDKatoSupplier" Type="nvarchar(max)" />
+    <Property Name="IDCountryPurchaser" Type="nvarchar(max)" />
+    <Property Name="IDCountrySupplier" Type="nvarchar(max)" />
+    <Property Name="VolumeWNds" Type="nvarchar(max)" />
+    <Property Name="Nds" Type="nvarchar(max)" />
+    <Property Name="IdOriginal" Type="int" />
+    <Property Name="ValueMkee" Type="nvarchar(max)" />
+    <Property Name="ValueKatoDelivery" Type="nvarchar(max)" />
+    <Property Name="ValueKatoPurchaser" Type="nvarchar(max)" />
+    <Property Name="ValueKatoSupplier" Type="nvarchar(max)" />
+    <Property Name="ValueCountrySupplier" Type="nvarchar(max)" />
+    <Property Name="ValueCountryPurchaser" Type="nvarchar(max)" />
+    <Property Name="ValueKpved" Type="nvarchar(max)" />
+    <Property Name="ValueTnved" Type="nvarchar(max)" />
+    <Property Name="ValueSkp" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="XLSX_CMER_Contragents">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="800" />
+  </EntityType>
+  <EntityType Name="XLSX_CMER_Countries">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="XLSX_CMER_Regions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="XLSX_CMER_Segments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="255" />
+    <Property Name="ParentID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="XLSX_CMER_Sources">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="XLSX_CMER_Transactions">
+    <Key>
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="IDSource" Type="int" />
+    <Property Name="IDDate" Type="datetime" />
+    <Property Name="IDRegion" Type="int" />
+    <Property Name="IDCustomer" Type="bigint" />
+    <Property Name="IDCountrySupplier" Type="int" />
+    <Property Name="IDSupplier" Type="bigint" />
+    <Property Name="IDSegment" Type="bigint" />
+    <Property Name="IDTRUType" Type="int" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Amount" Type="numeric" Precision="22" Scale="4" />
+    <Property Name="RECID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="XLSX_CMER_TRUTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CMER_DW.dbo.vwPlanFactLists' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPlanFactLists">
+    <Key>
+      <PropertyRef Name="IDFact" />
+    </Key>
+    <Property Name="IDFact" Type="int" Nullable="false" />
+    <Property Name="DateStart" Type="datetime" />
+    <Property Name="DateEnd" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Volume" Type="numeric" Precision="18" Scale="5" />
+    <Property Name="Qty" Type="numeric" Precision="18" Scale="5" />
+    <Property Name="ctgSName" Type="nvarchar" MaxLength="1270" />
+    <Property Name="ctgPName" Type="nvarchar" MaxLength="1270" />
+    <Property Name="katoSName" Type="nvarchar" MaxLength="308" />
+    <Property Name="katoPName" Type="nvarchar" MaxLength="308" />
+    <Property Name="mkeeName" Type="nvarchar" MaxLength="500" />
+    <Property Name="kpvedName" Type="nvarchar(max)" />
+    <Property Name="skpName" Type="nvarchar" MaxLength="1051" />
+    <Property Name="countrySName" Type="nvarchar(max)" />
+    <Property Name="countryPName" Type="nvarchar(max)" />
+    <Property Name="truType" Type="nvarchar" MaxLength="50" />
+    <Property Name="srcName" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK_Dic_CertificatesDetail_Dic_Certificates">
+    <End Role="Dic_Certificates" Type="Self.Dic_Certificates" Multiplicity="1" />
+    <End Role="Dic_CertificatesDetail" Type="Self.Dic_CertificatesDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Certificates">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Dic_CertificatesDetail">
+        <PropertyRef Name="IDCertificate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dic_CertificatesDetail_Dic_Mkee">
+    <End Role="Dic_Mkee" Type="Self.Dic_Mkee" Multiplicity="0..1" />
+    <End Role="Dic_CertificatesDetail" Type="Self.Dic_CertificatesDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Mkee">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Dic_CertificatesDetail">
+        <PropertyRef Name="MkeeRef" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dic_Ens_Dic_Ens">
+    <End Role="Dic_Ens" Type="Self.Dic_Ens" Multiplicity="0..1" />
+    <End Role="Dic_Ens1" Type="Self.Dic_Ens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Ens">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Dic_Ens1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dic_Kato_Dic_Kato">
+    <End Role="Dic_Kato" Type="Self.Dic_Kato" Multiplicity="0..1" />
+    <End Role="Dic_Kato1" Type="Self.Dic_Kato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Kato">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Dic_Kato1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dic_Kpved_Dic_Kpved">
+    <End Role="Dic_Kpved" Type="Self.Dic_Kpved" Multiplicity="0..1" />
+    <End Role="Dic_Kpved1" Type="Self.Dic_Kpved" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Kpved">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Dic_Kpved1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dic_Skp_Dic_Skp">
+    <End Role="Dic_Skp" Type="Self.Dic_Skp" Multiplicity="0..1" />
+    <End Role="Dic_Skp1" Type="Self.Dic_Skp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Skp">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Dic_Skp1">
+        <PropertyRef Name="IDParent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dic_Tnved_Dic_Tnved">
+    <End Role="Dic_Tnved" Type="Self.Dic_Tnved" Multiplicity="0..1" />
+    <End Role="Dic_Tnved1" Type="Self.Dic_Tnved" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Tnved">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Dic_Tnved1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact__Dic_TRUType_2">
+    <End Role="Dic_TRUType_" Type="Self.Dic_TRUType_" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_TRUType_">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDKpvedTRU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_Certificates_">
+    <End Role="Dic_Certificates" Type="Self.Dic_Certificates" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Certificates">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDCertificate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_ContragentsClPurchaser_">
+    <End Role="Dic_ContragentsCl" Type="Self.Dic_ContragentsCl" Multiplicity="1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_ContragentsCl">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDContragentPurchaser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_ContragentsClSuppliers_">
+    <End Role="Dic_ContragentsCl" Type="Self.Dic_ContragentsCl" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_ContragentsCl">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDContragentSupplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_Countries_">
+    <End Role="Dic_Countries" Type="Self.Dic_Countries" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IdCountryPurchaser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_CountriesSupplier_">
+    <End Role="Dic_Countries" Type="Self.Dic_Countries" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IdCountrySupplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_Ens_">
+    <End Role="Dic_Ens" Type="Self.Dic_Ens" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Ens">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDEns" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_KatoDelivery_">
+    <End Role="Dic_Kato" Type="Self.Dic_Kato" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Kato">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDKatoDelivery" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_Kpved_">
+    <End Role="Dic_Kpved" Type="Self.Dic_Kpved" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Kpved">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDKpved" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_Mkee_">
+    <End Role="Dic_Mkee" Type="Self.Dic_Mkee" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Mkee">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDMkee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_Skp_">
+    <End Role="Dic_Skp" Type="Self.Dic_Skp" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Skp">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDSkp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_Source_">
+    <End Role="Dic_Source" Type="Self.Dic_Source" Multiplicity="1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Source">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDSource" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_Dic_TypePlanFact_">
+    <End Role="Dic_TypePlanFact" Type="Self.Dic_TypePlanFact" Multiplicity="1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_TypePlanFact">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDTypePlanFact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_dimDateEnd_">
+    <End Role="dimDate" Type="Self.dimDate" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dimDate">
+        <PropertyRef Name="IDDate" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="DateEnd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_dimDateReportEnd_">
+    <End Role="dimDate" Type="Self.dimDate" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dimDate">
+        <PropertyRef Name="IDDate" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="DateReportEnd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_dimDateReportStart_">
+    <End Role="dimDate" Type="Self.dimDate" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dimDate">
+        <PropertyRef Name="IDDate" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="DateReportStart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_dimDateStart_">
+    <End Role="dimDate" Type="Self.dimDate" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dimDate">
+        <PropertyRef Name="IDDate" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="DateStart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_KatoPurchaser_">
+    <End Role="Dic_Kato" Type="Self.Dic_Kato" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Kato">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDKatoPurchaser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanFact_KatoSupplier_">
+    <End Role="Dic_Kato" Type="Self.Dic_Kato" Multiplicity="0..1" />
+    <End Role="PlanFact" Type="Self.PlanFact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dic_Kato">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PlanFact">
+        <PropertyRef Name="IDKatoSupplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XLSX_CMER_Segments_XLSX_CMER_Segments">
+    <End Role="XLSX_CMER_Segments" Type="Self.XLSX_CMER_Segments" Multiplicity="0..1" />
+    <End Role="XLSX_CMER_Segments1" Type="Self.XLSX_CMER_Segments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XLSX_CMER_Segments">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="XLSX_CMER_Segments1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XLSX_CMER_Transactions_dimDate">
+    <End Role="dimDate" Type="Self.dimDate" Multiplicity="0..1" />
+    <End Role="XLSX_CMER_Transactions" Type="Self.XLSX_CMER_Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dimDate">
+        <PropertyRef Name="IDDate" />
+      </Principal>
+      <Dependent Role="XLSX_CMER_Transactions">
+        <PropertyRef Name="IDDate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Contragents">
+    <End Role="XLSX_CMER_Contragents" Type="Self.XLSX_CMER_Contragents" Multiplicity="0..1" />
+    <End Role="XLSX_CMER_Transactions" Type="Self.XLSX_CMER_Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XLSX_CMER_Contragents">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="XLSX_CMER_Transactions">
+        <PropertyRef Name="IDCustomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Contragents1">
+    <End Role="XLSX_CMER_Contragents" Type="Self.XLSX_CMER_Contragents" Multiplicity="0..1" />
+    <End Role="XLSX_CMER_Transactions" Type="Self.XLSX_CMER_Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XLSX_CMER_Contragents">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="XLSX_CMER_Transactions">
+        <PropertyRef Name="IDSupplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Countries">
+    <End Role="XLSX_CMER_Countries" Type="Self.XLSX_CMER_Countries" Multiplicity="0..1" />
+    <End Role="XLSX_CMER_Transactions" Type="Self.XLSX_CMER_Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XLSX_CMER_Countries">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="XLSX_CMER_Transactions">
+        <PropertyRef Name="IDCountrySupplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Regions">
+    <End Role="XLSX_CMER_Regions" Type="Self.XLSX_CMER_Regions" Multiplicity="0..1" />
+    <End Role="XLSX_CMER_Transactions" Type="Self.XLSX_CMER_Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XLSX_CMER_Regions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="XLSX_CMER_Transactions">
+        <PropertyRef Name="IDRegion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Segments">
+    <End Role="XLSX_CMER_Segments" Type="Self.XLSX_CMER_Segments" Multiplicity="0..1" />
+    <End Role="XLSX_CMER_Transactions" Type="Self.XLSX_CMER_Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XLSX_CMER_Segments">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="XLSX_CMER_Transactions">
+        <PropertyRef Name="IDSegment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Sources">
+    <End Role="XLSX_CMER_Sources" Type="Self.XLSX_CMER_Sources" Multiplicity="0..1" />
+    <End Role="XLSX_CMER_Transactions" Type="Self.XLSX_CMER_Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XLSX_CMER_Sources">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="XLSX_CMER_Transactions">
+        <PropertyRef Name="IDSource" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XLSX_CMER_Transactions_XLSX_CMER_TRUTypes">
+    <End Role="XLSX_CMER_TRUTypes" Type="Self.XLSX_CMER_TRUTypes" Multiplicity="0..1" />
+    <End Role="XLSX_CMER_Transactions" Type="Self.XLSX_CMER_Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XLSX_CMER_TRUTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="XLSX_CMER_Transactions">
+        <PropertyRef Name="IDTRUType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CMER_DWModelStoreContainer">
+    <EntitySet Name="Dic_Certificates" EntityType="Self.Dic_Certificates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Certificates_" EntityType="Self.Dic_Certificates_" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_CertificatesDetail" EntityType="Self.Dic_CertificatesDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_CertificatesNEW" EntityType="Self.Dic_CertificatesNEW" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Contragents" EntityType="Self.Dic_Contragents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_ContragentsCl" EntityType="Self.Dic_ContragentsCl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Countries" EntityType="Self.Dic_Countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Ens" EntityType="Self.Dic_Ens" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Kato" EntityType="Self.Dic_Kato" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Kpved" EntityType="Self.Dic_Kpved" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Mkee" EntityType="Self.Dic_Mkee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Oked" EntityType="Self.Dic_Oked" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Skp" EntityType="Self.Dic_Skp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Source" EntityType="Self.Dic_Source" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Tnved" EntityType="Self.Dic_Tnved" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_TRUType" EntityType="Self.Dic_TRUType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_TRUType_" EntityType="Self.Dic_TRUType_" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_TypePlanFact" EntityType="Self.Dic_TypePlanFact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dimDate" EntityType="Self.dimDate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlanFact" EntityType="Self.PlanFact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlanFact_Err" EntityType="Self.PlanFact_Err" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="XLSX_CMER_Contragents" EntityType="Self.XLSX_CMER_Contragents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="XLSX_CMER_Countries" EntityType="Self.XLSX_CMER_Countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="XLSX_CMER_Regions" EntityType="Self.XLSX_CMER_Regions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="XLSX_CMER_Segments" EntityType="Self.XLSX_CMER_Segments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="XLSX_CMER_Sources" EntityType="Self.XLSX_CMER_Sources" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="XLSX_CMER_Transactions" EntityType="Self.XLSX_CMER_Transactions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="XLSX_CMER_TRUTypes" EntityType="Self.XLSX_CMER_TRUTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vwPlanFactLists" EntityType="Self.vwPlanFactLists" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwPlanFactLists].[IDFact] AS [IDFact], 
+    [vwPlanFactLists].[DateStart] AS [DateStart], 
+    [vwPlanFactLists].[DateEnd] AS [DateEnd], 
+    [vwPlanFactLists].[Name] AS [Name], 
+    [vwPlanFactLists].[Volume] AS [Volume], 
+    [vwPlanFactLists].[Qty] AS [Qty], 
+    [vwPlanFactLists].[ctgSName] AS [ctgSName], 
+    [vwPlanFactLists].[ctgPName] AS [ctgPName], 
+    [vwPlanFactLists].[katoSName] AS [katoSName], 
+    [vwPlanFactLists].[katoPName] AS [katoPName], 
+    [vwPlanFactLists].[mkeeName] AS [mkeeName], 
+    [vwPlanFactLists].[kpvedName] AS [kpvedName], 
+    [vwPlanFactLists].[skpName] AS [skpName], 
+    [vwPlanFactLists].[countrySName] AS [countrySName], 
+    [vwPlanFactLists].[countryPName] AS [countryPName], 
+    [vwPlanFactLists].[truType] AS [truType], 
+    [vwPlanFactLists].[srcName] AS [srcName]
+    FROM [dbo].[vwPlanFactLists] AS [vwPlanFactLists]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Dic_CertificatesDetail_Dic_Certificates" Association="Self.FK_Dic_CertificatesDetail_Dic_Certificates">
+      <End Role="Dic_Certificates" EntitySet="Dic_Certificates" />
+      <End Role="Dic_CertificatesDetail" EntitySet="Dic_CertificatesDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dic_CertificatesDetail_Dic_Mkee" Association="Self.FK_Dic_CertificatesDetail_Dic_Mkee">
+      <End Role="Dic_Mkee" EntitySet="Dic_Mkee" />
+      <End Role="Dic_CertificatesDetail" EntitySet="Dic_CertificatesDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dic_Ens_Dic_Ens" Association="Self.FK_Dic_Ens_Dic_Ens">
+      <End Role="Dic_Ens" EntitySet="Dic_Ens" />
+      <End Role="Dic_Ens1" EntitySet="Dic_Ens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dic_Kato_Dic_Kato" Association="Self.FK_Dic_Kato_Dic_Kato">
+      <End Role="Dic_Kato" EntitySet="Dic_Kato" />
+      <End Role="Dic_Kato1" EntitySet="Dic_Kato" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dic_Kpved_Dic_Kpved" Association="Self.FK_Dic_Kpved_Dic_Kpved">
+      <End Role="Dic_Kpved" EntitySet="Dic_Kpved" />
+      <End Role="Dic_Kpved1" EntitySet="Dic_Kpved" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dic_Skp_Dic_Skp" Association="Self.FK_Dic_Skp_Dic_Skp">
+      <End Role="Dic_Skp" EntitySet="Dic_Skp" />
+      <End Role="Dic_Skp1" EntitySet="Dic_Skp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dic_Tnved_Dic_Tnved" Association="Self.FK_Dic_Tnved_Dic_Tnved">
+      <End Role="Dic_Tnved" EntitySet="Dic_Tnved" />
+      <End Role="Dic_Tnved1" EntitySet="Dic_Tnved" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact__Dic_TRUType_2" Association="Self.FK_PlanFact__Dic_TRUType_2">
+      <End Role="Dic_TRUType_" EntitySet="Dic_TRUType_" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_Certificates_" Association="Self.FK_PlanFact_Dic_Certificates_">
+      <End Role="Dic_Certificates" EntitySet="Dic_Certificates" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_ContragentsClPurchaser_" Association="Self.FK_PlanFact_Dic_ContragentsClPurchaser_">
+      <End Role="Dic_ContragentsCl" EntitySet="Dic_ContragentsCl" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_ContragentsClSuppliers_" Association="Self.FK_PlanFact_Dic_ContragentsClSuppliers_">
+      <End Role="Dic_ContragentsCl" EntitySet="Dic_ContragentsCl" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_Countries_" Association="Self.FK_PlanFact_Dic_Countries_">
+      <End Role="Dic_Countries" EntitySet="Dic_Countries" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_CountriesSupplier_" Association="Self.FK_PlanFact_Dic_CountriesSupplier_">
+      <End Role="Dic_Countries" EntitySet="Dic_Countries" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_Ens_" Association="Self.FK_PlanFact_Dic_Ens_">
+      <End Role="Dic_Ens" EntitySet="Dic_Ens" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_KatoDelivery_" Association="Self.FK_PlanFact_Dic_KatoDelivery_">
+      <End Role="Dic_Kato" EntitySet="Dic_Kato" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_Kpved_" Association="Self.FK_PlanFact_Dic_Kpved_">
+      <End Role="Dic_Kpved" EntitySet="Dic_Kpved" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_Mkee_" Association="Self.FK_PlanFact_Dic_Mkee_">
+      <End Role="Dic_Mkee" EntitySet="Dic_Mkee" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_Skp_" Association="Self.FK_PlanFact_Dic_Skp_">
+      <End Role="Dic_Skp" EntitySet="Dic_Skp" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_Source_" Association="Self.FK_PlanFact_Dic_Source_">
+      <End Role="Dic_Source" EntitySet="Dic_Source" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_Dic_TypePlanFact_" Association="Self.FK_PlanFact_Dic_TypePlanFact_">
+      <End Role="Dic_TypePlanFact" EntitySet="Dic_TypePlanFact" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_dimDateEnd_" Association="Self.FK_PlanFact_dimDateEnd_">
+      <End Role="dimDate" EntitySet="dimDate" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_dimDateReportEnd_" Association="Self.FK_PlanFact_dimDateReportEnd_">
+      <End Role="dimDate" EntitySet="dimDate" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_dimDateReportStart_" Association="Self.FK_PlanFact_dimDateReportStart_">
+      <End Role="dimDate" EntitySet="dimDate" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_dimDateStart_" Association="Self.FK_PlanFact_dimDateStart_">
+      <End Role="dimDate" EntitySet="dimDate" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_KatoPurchaser_" Association="Self.FK_PlanFact_KatoPurchaser_">
+      <End Role="Dic_Kato" EntitySet="Dic_Kato" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanFact_KatoSupplier_" Association="Self.FK_PlanFact_KatoSupplier_">
+      <End Role="Dic_Kato" EntitySet="Dic_Kato" />
+      <End Role="PlanFact" EntitySet="PlanFact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XLSX_CMER_Segments_XLSX_CMER_Segments" Association="Self.FK_XLSX_CMER_Segments_XLSX_CMER_Segments">
+      <End Role="XLSX_CMER_Segments" EntitySet="XLSX_CMER_Segments" />
+      <End Role="XLSX_CMER_Segments1" EntitySet="XLSX_CMER_Segments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XLSX_CMER_Transactions_dimDate" Association="Self.FK_XLSX_CMER_Transactions_dimDate">
+      <End Role="dimDate" EntitySet="dimDate" />
+      <End Role="XLSX_CMER_Transactions" EntitySet="XLSX_CMER_Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Contragents" Association="Self.FK_XLSX_CMER_Transactions_XLSX_CMER_Contragents">
+      <End Role="XLSX_CMER_Contragents" EntitySet="XLSX_CMER_Contragents" />
+      <End Role="XLSX_CMER_Transactions" EntitySet="XLSX_CMER_Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Contragents1" Association="Self.FK_XLSX_CMER_Transactions_XLSX_CMER_Contragents1">
+      <End Role="XLSX_CMER_Contragents" EntitySet="XLSX_CMER_Contragents" />
+      <End Role="XLSX_CMER_Transactions" EntitySet="XLSX_CMER_Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Countries" Association="Self.FK_XLSX_CMER_Transactions_XLSX_CMER_Countries">
+      <End Role="XLSX_CMER_Countries" EntitySet="XLSX_CMER_Countries" />
+      <End Role="XLSX_CMER_Transactions" EntitySet="XLSX_CMER_Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Regions" Association="Self.FK_XLSX_CMER_Transactions_XLSX_CMER_Regions">
+      <End Role="XLSX_CMER_Regions" EntitySet="XLSX_CMER_Regions" />
+      <End Role="XLSX_CMER_Transactions" EntitySet="XLSX_CMER_Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Segments" Association="Self.FK_XLSX_CMER_Transactions_XLSX_CMER_Segments">
+      <End Role="XLSX_CMER_Segments" EntitySet="XLSX_CMER_Segments" />
+      <End Role="XLSX_CMER_Transactions" EntitySet="XLSX_CMER_Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XLSX_CMER_Transactions_XLSX_CMER_Sources" Association="Self.FK_XLSX_CMER_Transactions_XLSX_CMER_Sources">
+      <End Role="XLSX_CMER_Sources" EntitySet="XLSX_CMER_Sources" />
+      <End Role="XLSX_CMER_Transactions" EntitySet="XLSX_CMER_Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XLSX_CMER_Transactions_XLSX_CMER_TRUTypes" Association="Self.FK_XLSX_CMER_Transactions_XLSX_CMER_TRUTypes">
+      <End Role="XLSX_CMER_TRUTypes" EntitySet="XLSX_CMER_TRUTypes" />
+      <End Role="XLSX_CMER_Transactions" EntitySet="XLSX_CMER_Transactions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

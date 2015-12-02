@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewBag.Title = "_Menu";
+}
+<div id="rr" style="width:700px;"></div>
+<div class="easyui-ribbon" style="width:100%;">
+    <div title="Рабочие таблицы">
+        @*<div class="ribbon-group">
+                <div class="ribbon-toolbar">
+                    <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">Paste</a>
+                </div>
+                <div class="ribbon-toolbar">
+                    <a href="#" class="easyui-linkbutton" data-options="name:'cut',iconCls:'icon-cut',plain:true">Cut</a><br>
+                    <a href="#" class="easyui-linkbutton" data-options="name:'copy',iconCls:'icon-copy',plain:true">Copy</a><br>
+                    <a href="#" class="easyui-linkbutton" data-options="name:'format',iconCls:'icon-format',plain:true">Format</a>
+                </div>
+                <div class="ribbon-group-title">Clipboard</div>
+            </div>*@
+        <div class="ribbon-group-sep"></div>
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" id="PlanFactView" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-ok',iconAlign:'top',size:'large'">Верные</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" id="PlanFactErrView" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-no',iconAlign:'top',size:'large'">Ошибочные</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-table-large',iconAlign:'top',size:'large'">Все записи</a>
+            </div>
+            <div class="ribbon-group-title">План/Факт</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-ok',iconAlign:'top',size:'large'">Верные</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-no',iconAlign:'top',size:'large'">Ошибочные</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-table-large',iconAlign:'top',size:'large'">Все записи</a>
+            </div>
+            <div class="ribbon-group-title">Импорт/Экспорт</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+    </div>
+    <div title="Справочники">
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">КПВЭД</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">ТНВЭД</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">ЕНС</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">ВИД ТРУ</a>
+            </div>
+            <div class="ribbon-group-title">Классификаторы товаров</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">КАТО</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">Страны мира</a>
+            </div>
+            <div class="ribbon-group-title">Местоположение</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">МКВИ</a>
+            </div>
+            <div class="ribbon-group-title">МКВИ</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">Источники данных</a>
+            </div>
+            <div class="ribbon-group-title">Источники данных</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">Контрагенты</a>
+            </div>
+            <div class="ribbon-group-title">Контрагенты</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">Сертификаты</a>
+            </div>
+            <div class="ribbon-group-title">Сертификаты</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+    </div>
+    <div title="Кубы">
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">Paste</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-linkbutton" data-options="name:'cut',iconCls:'icon-cut',plain:true">Cut</a><br>
+                <a href="#" class="easyui-linkbutton" data-options="name:'copy',iconCls:'icon-copy',plain:true">Copy</a><br>
+                <a href="#" class="easyui-linkbutton" data-options="name:'format',iconCls:'icon-format',plain:true">Format</a>
+            </div>
+            <div class="ribbon-group-title">Clipboard</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar" style="width:200px"></div>
+            <div class="ribbon-group-title">other title</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+    </div>
+    <div title="Настройки">
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-menubutton" data-options="name:'paste',iconCls:'icon-paste-large',iconAlign:'top',size:'large'">Paste</a>
+            </div>
+            <div class="ribbon-toolbar">
+                <a href="#" class="easyui-linkbutton" data-options="name:'cut',iconCls:'icon-cut',plain:true">Cut</a><br>
+                <a href="#" class="easyui-linkbutton" data-options="name:'copy',iconCls:'icon-copy',plain:true">Copy</a><br>
+                <a href="#" class="easyui-linkbutton" data-options="name:'format',iconCls:'icon-format',plain:true">Format</a>
+            </div>
+            <div class="ribbon-group-title">Clipboard</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+        <div class="ribbon-group">
+            <div class="ribbon-toolbar" style="width:200px"></div>
+            <div class="ribbon-group-title">other title</div>
+        </div>
+        <div class="ribbon-group-sep"></div>
+    </div>
+</div>
+

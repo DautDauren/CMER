@@ -1,0 +1,295 @@
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\CMER.dll.config
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\CMER.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\CMER.pdb
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Antlr3.Runtime.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\EntityFramework.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\EntityFramework.SqlServer.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.Google.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Web.Infrastructure.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Newtonsoft.Json.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Owin.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.Helpers.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.Mvc.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.Optimization.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.Razor.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.WebPages.Deployment.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.WebPages.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.WebPages.Razor.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\WebGrease.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.Helpers.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.Mvc.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.Optimization.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.Razor.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.WebPages.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.WebPages.Deployment.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\System.Web.WebPages.Razor.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Antlr3.Runtime.pdb
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Newtonsoft.Json.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\EntityFramework.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\EntityFramework.SqlServer.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.Google.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\System.Web.Helpers.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\System.Web.Mvc.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\System.Web.Optimization.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\System.Web.Razor.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\System.Web.WebPages.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\System.Web.WebPages.Deployment.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\System.Web.WebPages.Razor.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\EntityFramework.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\EntityFramework.SqlServer.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.Owin.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\obj\Debug\CMER.csprojResolveAssemblyReference.cache
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\obj\Debug\CMER.dll
+c:\users\daut_dk\documents\visual studio 2013\Projects\CMER\CMER\obj\Debug\CMER.pdb
+C:\projects\CMER\CMER\bin\CMER.dll.config
+C:\projects\CMER\CMER\bin\CMER.dll
+C:\projects\CMER\CMER\bin\CMER.pdb
+C:\projects\CMER\CMER\bin\Antlr3.Runtime.dll
+C:\projects\CMER\CMER\bin\EntityFramework.dll
+C:\projects\CMER\CMER\bin\EntityFramework.SqlServer.dll
+C:\projects\CMER\CMER\bin\Microsoft.AspNet.Identity.Core.dll
+C:\projects\CMER\CMER\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\projects\CMER\CMER\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\projects\CMER\CMER\bin\Microsoft.Owin.dll
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.Cookies.dll
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.dll
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.Facebook.dll
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.Google.dll
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.OAuth.dll
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.Twitter.dll
+C:\projects\CMER\CMER\bin\Microsoft.Web.Infrastructure.dll
+C:\projects\CMER\CMER\bin\Newtonsoft.Json.dll
+C:\projects\CMER\CMER\bin\Owin.dll
+C:\projects\CMER\CMER\bin\System.Web.Helpers.dll
+C:\projects\CMER\CMER\bin\System.Web.Mvc.dll
+C:\projects\CMER\CMER\bin\System.Web.Optimization.dll
+C:\projects\CMER\CMER\bin\System.Web.Razor.dll
+C:\projects\CMER\CMER\bin\System.Web.WebPages.Deployment.dll
+C:\projects\CMER\CMER\bin\System.Web.WebPages.dll
+C:\projects\CMER\CMER\bin\System.Web.WebPages.Razor.dll
+C:\projects\CMER\CMER\bin\WebGrease.dll
+C:\projects\CMER\CMER\bin\System.Web.Helpers.xml
+C:\projects\CMER\CMER\bin\System.Web.Mvc.xml
+C:\projects\CMER\CMER\bin\System.Web.Optimization.xml
+C:\projects\CMER\CMER\bin\System.Web.Razor.xml
+C:\projects\CMER\CMER\bin\System.Web.WebPages.xml
+C:\projects\CMER\CMER\bin\System.Web.WebPages.Deployment.xml
+C:\projects\CMER\CMER\bin\System.Web.WebPages.Razor.xml
+C:\projects\CMER\CMER\bin\Antlr3.Runtime.pdb
+C:\projects\CMER\CMER\bin\Newtonsoft.Json.xml
+C:\projects\CMER\CMER\bin\EntityFramework.xml
+C:\projects\CMER\CMER\bin\EntityFramework.SqlServer.xml
+C:\projects\CMER\CMER\bin\Microsoft.AspNet.Identity.Core.xml
+C:\projects\CMER\CMER\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\projects\CMER\CMER\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\projects\CMER\CMER\bin\Microsoft.Owin.xml
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.xml
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.Facebook.xml
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.Cookies.xml
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.OAuth.xml
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.Google.xml
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.Twitter.xml
+C:\projects\CMER\CMER\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\projects\CMER\CMER\bin\ru\System.Web.Helpers.resources.dll
+C:\projects\CMER\CMER\bin\ru\System.Web.Mvc.resources.dll
+C:\projects\CMER\CMER\bin\ru\System.Web.Optimization.resources.dll
+C:\projects\CMER\CMER\bin\ru\System.Web.Razor.resources.dll
+C:\projects\CMER\CMER\bin\ru\System.Web.WebPages.resources.dll
+C:\projects\CMER\CMER\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\projects\CMER\CMER\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\projects\CMER\CMER\bin\ru\EntityFramework.resources.dll
+C:\projects\CMER\CMER\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.Owin.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+C:\projects\CMER\CMER\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\projects\CMER\CMER\obj\Debug\CMER.csprojResolveAssemblyReference.cache
+C:\projects\CMER\CMER\obj\Debug\CMER.dll
+C:\projects\CMER\CMER\obj\Debug\CMER.pdb
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\CMER.dll.config
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\CMER.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\CMER.pdb
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Antlr3.Runtime.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\EntityFramework.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\EntityFramework.SqlServer.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Newtonsoft.Json.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Owin.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.Helpers.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.Mvc.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.Optimization.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.Razor.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.WebPages.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\WebGrease.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.Helpers.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.Mvc.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.Optimization.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.Razor.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.WebPages.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Antlr3.Runtime.pdb
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Newtonsoft.Json.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\EntityFramework.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\EntityFramework.SqlServer.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\EntityFramework.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.Owin.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.Owin.Security.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\obj\Debug\CMER.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\obj\Debug\CMER.pdb
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER (1)\CMER\CMER\obj\Debug\CMER.csprojResolveAssemblyReference.cache
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\CMER.dll.config
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\CMER.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\CMER.pdb
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Antlr3.Runtime.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\EntityFramework.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\EntityFramework.SqlServer.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Newtonsoft.Json.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Owin.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.Helpers.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.Mvc.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.Optimization.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.Razor.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.WebPages.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\WebGrease.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.Helpers.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.Mvc.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.Optimization.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.Razor.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.WebPages.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Antlr3.Runtime.pdb
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Newtonsoft.Json.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\EntityFramework.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\EntityFramework.SqlServer.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\EntityFramework.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.Owin.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.Owin.Security.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\obj\Debug\CMER.dll
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\obj\Debug\CMER.pdb
