@@ -92,57 +92,57 @@ namespace CMER
                 List<object> obj = new List<object>();
                 if (Name == "IDKpved")
                 {
-                    obj.AddRange(context.Dic_Kpved.Where(x => x.Name_1.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, Name_1 = x.Name_1, Name_2 = x.Name_2, Descr = x.Descr, Unioncheck = x.Unioncheck }).ToList());
+                    obj.AddRange(context.Dic_Kpved.Where(x => x.Name_1.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, name = x.Name_1, Name_2 = x.Name_2, Descr = x.Descr, Unioncheck = x.Unioncheck }).ToList());
                     if (selid != 0)
-                    obj.Add(context.Dic_Kpved.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Label = x.Label, Name_1 = x.Name_1, Name_2 = x.Name_2, Descr = x.Descr, Unioncheck = x.Unioncheck }).SingleOrDefault());
+                        obj.Add(context.Dic_Kpved.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Label = x.Label, name = x.Name_1, Name_2 = x.Name_2, Descr = x.Descr, Unioncheck = x.Unioncheck }).SingleOrDefault());
                 }
                 else if (Name == "IDMkee")
                 {
-                    obj.AddRange(context.Dic_Mkee.Where(x => x.Name_1.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, Name_1 = x.Name_1, Name_2 = x.Name_2 }).ToList());
+                    obj.AddRange(context.Dic_Mkee.Where(x => x.Name_1.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, name = x.Name_1, Name_2 = x.Name_2 }).ToList());
                     if (selid != 0)
-                    obj.Add(context.Dic_Mkee.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Label = x.Label, Name_1 = x.Name_1, Name_2 = x.Name_2 }).SingleOrDefault());
+                        obj.Add(context.Dic_Mkee.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Label = x.Label, name = x.Name_1, Name_2 = x.Name_2 }).SingleOrDefault());
                 }
                 else if (Name == "IDKato")
                 {
-                    obj.AddRange(context.Dic_Kato.Where(x => x.Name_1.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, Name_1 = x.Name_1, Name_2 = x.Name_2, tempParent = x.tempParent }).ToList());
+                    obj.AddRange(context.Dic_Kato.Where(x => x.Name_1.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, name = x.Name_1, Name_2 = x.Name_2, tempParent = x.tempParent }).ToList());
                     if (selid != 0)
-                    obj.Add(context.Dic_Kato.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Label = x.Label, Name_1 = x.Name_1, Name_2 = x.Name_2, tempParent = x.tempParent }).SingleOrDefault());
+                        obj.Add(context.Dic_Kato.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Label = x.Label, name = x.Name_1, Name_2 = x.Name_2, tempParent = x.tempParent }).SingleOrDefault());
                 }
                 else if (Name == "IDContragents")
                 {
-                    obj.AddRange(context.Dic_ContragentsCl.Where(x => x.NameRu.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, NameRu = x.NameRu, NameKz = x.NameKz, Phones = x.Phones, FIOLeader = x.FIOLeader }).ToList());
+                    obj.AddRange(context.Dic_ContragentsCl.Where(x => x.NameRu.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, name = x.NameRu, NameKz = x.NameKz, Phones = x.Phones, FIOLeader = x.FIOLeader }).ToList());
                     if (selid != 0)
-                    obj.Add(context.Dic_ContragentsCl.Where(x => x.ID == selid).Take(rows).Select(x => new { ID = x.ID, NameRu = x.NameRu, NameKz = x.NameKz, Phones = x.Phones, FIOLeader = x.FIOLeader }).SingleOrDefault());
+                        obj.Add(context.Dic_ContragentsCl.Where(x => x.ID == selid).Take(rows).Select(x => new { ID = x.ID, name = x.NameRu, NameKz = x.NameKz, Phones = x.Phones, FIOLeader = x.FIOLeader }).SingleOrDefault());
                 }                    
                 else if (Name == "IDSource")
                 {
-                    obj.AddRange(context.Dic_Source.Where(x => x.Name.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Name = x.Name }).ToList());
+                    obj.AddRange(context.Dic_Source.Where(x => x.Name.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, name = x.Name }).ToList());
                     if (selid != 0)
-                    obj.Add(context.Dic_Source.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Name = x.Name }).SingleOrDefault());
+                    obj.Add(context.Dic_Source.Where(x => x.ID == selid).Select(x => new { ID = x.ID, name = x.Name }).SingleOrDefault());
                 }
                 else if (Name == "IDTypePlanFact")
-                    return context.Dic_TypePlanFact.Where(x => x.Name.Contains(search)).Take(rows).Select(x => new { ID = x.ID, Name = x.Name }).ToList();
+                    return context.Dic_TypePlanFact.Where(x => x.Name.Contains(search)).Take(rows).Select(x => new { ID = x.ID, name = x.Name }).ToList();
                 else if (Name == "IDSkp")
                 {
-                    obj.AddRange(context.Dic_Skp.Where(x => x.Label.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, PlanFact = x.PlanFact, Kpved = x.Kpved, NameRu = x.NameRu }).ToList());
+                    obj.AddRange(context.Dic_Skp.Where(x => x.Label.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, PlanFact = x.PlanFact, Kpved = x.Kpved, name = x.NameRu }).ToList());
                     if (selid != 0)
-                        obj.Add(context.Dic_Skp.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Label = x.Label, PlanFact = x.PlanFact, Kpved = x.Kpved, NameRu = x.NameRu }).SingleOrDefault());
+                        obj.Add(context.Dic_Skp.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Label = x.Label, PlanFact = x.PlanFact, Kpved = x.Kpved, name = x.NameRu }).SingleOrDefault());
                 }
                 else if (Name == "IDCertificates")
-                    return context.Dic_Certificates.Where(x => x.Наименование_экспортера_рус.Contains(search)).Take(rows).Select(x => new { ID = x.ID, Наименование_экспортера_рус = x.Наименование_экспортера_рус, www = x.www, email = x.email }).ToList();
+                    return context.Dic_Certificates.Where(x => x.Наименование_экспортера_рус.Contains(search)).Take(rows).Select(x => new { ID = x.ID, name = x.Наименование_экспортера_рус, www = x.www, email = x.email }).ToList();
                 else if (Name == "IDEns")
-                    return context.Dic_Ens.Where(x => x.Label.Contains(search)).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, Kpved = x.Kpved, Name_1 = x.Name_1 }).ToList();
+                    return context.Dic_Ens.Where(x => x.Label.Contains(search)).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, Kpved = x.Kpved, name = x.Name_1 }).ToList();
                 else if (Name == "IDTnved")
-                    return context.Dic_Tnved.Where(x => x.Label.Contains(search)).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, Name_1 = x.Name_1, Name_2 = x.Name_2, ImportDuty = x.ImportDuty }).ToList();
+                    return context.Dic_Tnved.Where(x => x.Label.Contains(search)).Take(rows).Select(x => new { ID = x.ID, Label = x.Label, name = x.Name_1, Name_2 = x.Name_2, ImportDuty = x.ImportDuty }).ToList();
                 else if (Name == "IDCertificatesDetail")
-                    return context.Dic_CertificatesDetail.Where(x => x.Наименование_товара_рус.Contains(search)).Take(rows).Select(x => new { ID = x.ID, Наименование_товара_рус = x.Наименование_товара_рус, FilePath = x.FilePath, IDCertificate = x.IDCertificate, RowNumber = x.RowNumber }).ToList();
+                    return context.Dic_CertificatesDetail.Where(x => x.Наименование_товара_рус.Contains(search)).Take(rows).Select(x => new { ID = x.ID, name = x.Наименование_товара_рус, FilePath = x.FilePath, IDCertificate = x.IDCertificate, RowNumber = x.RowNumber }).ToList();
                 else if (Name == "IDCountries")
-                    return context.Dic_Countries.Where(x => x.Names.Contains(search)).Take(rows).Select(x => new { Id = x.Id, Names = x.Names, IsDeleted = x.IsDeleted, ModifiedDate = x.ModifiedDate }).ToList();
+                    return context.Dic_Countries.Where(x => x.Names.Contains(search)).Take(rows).Select(x => new { Id = x.Id, name = x.Names, IsDeleted = x.IsDeleted, ModifiedDate = x.ModifiedDate }).ToList();
                 else if (Name == "IDTRUType")
                 {
-                    obj.AddRange(context.Dic_TRUType.Where(x => x.Descr.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, Descr = x.Descr }).ToList());
+                    obj.AddRange(context.Dic_TRUType.Where(x => x.Descr.Contains(search)).OrderBy(x => x.ID).Skip(skip).Take(rows).Select(x => new { ID = x.ID, name = x.Descr }).ToList());
                     if (selid != 0)
-                        obj.Add(context.Dic_TRUType.Where(x => x.ID == selid).Select(x => new { ID = x.ID, Descr = x.Descr }).SingleOrDefault());
+                        obj.Add(context.Dic_TRUType.Where(x => x.ID == selid).Select(x => new { ID = x.ID, name = x.Descr }).SingleOrDefault());
                 }
                 return obj;
 
@@ -194,12 +194,12 @@ namespace CMER
             if (Name == "IDKpved")
             {
                 Model.dicname = "IDKpved";
-                Model.textField = "Name_1";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ИД", width = 60,  key = true });
                 col.Add(new ColModel { name = "Label", label = "Метка", width = 60 });
                 //col.Add(new ColModel { name = "Unioncheck", label = "Unioncheck", width = 60 });
-                col.Add(new ColModel { name = "Name_1", label = "Наименование по КПВЭД", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Наименование по КПВЭД", width = 60 });
                 //col.Add(new ColModel { name = "Name_2", label = "Name_2", width = 60 });
                 //col.Add(new ColModel { field = "IdTRUType", title = "IdTRUType", width = 60 });
                 //col.Add(new ColModel { field = "Kpved_type_desc", title = "Kpved_type_desc", width = 60 });
@@ -214,22 +214,22 @@ namespace CMER
             else if (Name == "IDMkee")
             {
                 Model.dicname = "IDMkee";
-                Model.textField = "Name_1";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ИД", width = 60, key = true });
                 col.Add(new ColModel { name = "Label", label = "Метка", width = 60 });
-                col.Add(new ColModel { name = "Name_1", label = "Ед. Измерения", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Ед. Измерения", width = 60 });
                 //col.Add(new ColModel { name = "Name_2", label = "Name_2", width = 60 });
                 Model.colModel = col;
             }
             else if (Name == "IDKato")
             {
                 Model.dicname = "IDKato";
-                Model.textField = "Name_1";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ИД", width = 60, key = true });
                 col.Add(new ColModel { name = "Label", label = "Метка", width = 60 });
-                col.Add(new ColModel { name = "Name_1", label = "Наименование", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Наименование", width = 60 });
                 //col.Add(new ColModel { name = "Name_2", label = "Name_2", width = 60 });
                 //col.Add(new ColModel { name = "tempParent", label = "tempParent", width = 60 });
                 //col.Add(new ColModel { name = "ParentID", label = "ParentID", width = 60 });
@@ -238,11 +238,11 @@ namespace CMER
             else if (Name == "IDContragents")
             {
                 Model.dicname = "IDContragents";
-                Model.textField = "NameRu";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ИД", width = 60, key = true });
                 //col.Add(new ColModel { name = "Label", label = "Метка", width = 60 });
-                col.Add(new ColModel { name = "NameRu", label = "Наименование", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Наименование", width = 60 });
                 //col.Add(new ColModel { name = "NameKz", label = "NameKz", width = 60 });
                 //col.Add(new ColModel { name = "AdressJur", label = "Юр Адрес", width = 60 });
                 //col.Add(new ColModel { name = "AdressFact", label = "Факт Адрес", width = 60 });
@@ -257,29 +257,29 @@ namespace CMER
             else if (Name == "IDSource")
             {
                 Model.dicname = "IDSource";
-                Model.textField = "Name";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ИД", width = 60, key = true });
-                col.Add(new ColModel { name = "Name", label = "Источник", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Источник", width = 60 });
                 Model.colModel = col;
             }
             else if (Name == "IDTypePlanFact")
             {
                 Model.dicname = "IDKpved";
-                Model.textField = "Name";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ID", width = 60, key = true });
-                col.Add(new ColModel { name = "Name", label = "Name", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Name", width = 60 });
                 Model.colModel = col;
             }
             else if (Name == "IDSkp")
             {
                 Model.dicname = "IDSkp";
-                Model.textField = "Label";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ИД", width = 60, key = true });
                 col.Add(new ColModel { name = "Label", label = "Метка", width = 60 });
-                col.Add(new ColModel { name = "NameRu", label = "Наименование", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Наименование", width = 60 });
                 //col.Add(new ColModel { name = "NameKz", label = "NameKz", width = 60 });
                 //col.Add(new ColModel { name = "NameEn", label = "NameEn", width = 60 });
                 col.Add(new ColModel { name = "Unit1", label = "Unit1", width = 60 });
@@ -297,12 +297,12 @@ namespace CMER
             else if (Name == "IDCertificates")
             {
                 Model.dicname = "IDCertificates";
-                Model.textField = "Наименование_экспортера_рус";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ID", width = 60, key = true });
                 col.Add(new ColModel { name = "KatoRef", label = "KatoRef", width = 60 });
                 col.Add(new ColModel { name = "Дата_сертификата", label = "Дата_сертификата", width = 60 });
-                col.Add(new ColModel { name = "Наименование_экспортера_рус", label = "Наименование_экспортера_рус", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Наименование_экспортера_рус", width = 60 });
                 col.Add(new ColModel { name = "Наименование_экспортера_каз", label = "Наименование_экспортера_каз", width = 60 });
                 col.Add(new ColModel { name = "Адрес_экспортера_рус", label = "Адрес_экспортера_рус", width = 60 });
                 col.Add(new ColModel { name = "Адрес_экспортера_каз", label = "Адрес_экспортера_каз", width = 60 });
@@ -317,14 +317,14 @@ namespace CMER
             else if (Name == "IDEns")
             {
                 Model.dicname = "IDEns";
-                Model.textField = "Label";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ID", width = 60, key = true });
                 col.Add(new ColModel { name = "Label", label = "Label", width = 60 });
                 col.Add(new ColModel { name = "TypePurchase", label = "TypePurchase", width = 60 });
                 col.Add(new ColModel { name = "Kpved", label = "Kpved", width = 60 });
                 col.Add(new ColModel { name = "Unioncheck", label = "Unioncheck", width = 60 });
-                col.Add(new ColModel { name = "Name_1", label = "Name_1", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Name_1", width = 60 });
                 col.Add(new ColModel { name = "Descript", label = "Descript", width = 60 });
                 col.Add(new ColModel { name = "Mkee_name", label = "Mkee_name", width = 60 });
                 col.Add(new ColModel { name = "Mkee_label", label = "Mkee_label", width = 60 });
@@ -338,12 +338,12 @@ namespace CMER
             else if (Name == "IDTnved")
             {
                 Model.dicname = "IDTnved";
-                Model.textField = "Label";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ID", width = 60, key = true });
                 col.Add(new ColModel { name = "Label", label = "Label", width = 60 });
                 col.Add(new ColModel { name = "Unioncheck", label = "Unioncheck", width = 60 });
-                col.Add(new ColModel { name = "Name_1", label = "Name_1", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Name_1", width = 60 });
                 col.Add(new ColModel { name = "Name_2", label = "Name_2", width = 60 });
                 col.Add(new ColModel { name = "Mkee", label = "Mkee", width = 60 });
                 col.Add(new ColModel { name = "ImportDuty", label = "ImportDuty", width = 60 });
@@ -353,7 +353,7 @@ namespace CMER
             else if (Name == "IDCertificatesDetail")
             {
                 Model.dicname = "IDCertificatesDetail";
-                Model.textField = "Наименование_товара_рус";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ID", width = 60, key = true });
                 col.Add(new ColModel { name = "IDCertificate", label = "IDCertificate", width = 60 });
@@ -363,7 +363,7 @@ namespace CMER
                 col.Add(new ColModel { name = "ТНВЭД", label = "ТНВЭД", width = 60 });
                 col.Add(new ColModel { name = "КПВЭД", label = "КПВЭД", width = 60 });
                 col.Add(new ColModel { name = "Упаковка", label = "Упаковка", width = 60 });
-                col.Add(new ColModel { name = "Наименование_товара_рус", label = "Наименование_товара_рус", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Наименование_товара_рус", width = 60 });
                 col.Add(new ColModel { name = "Наименование_товара_каз", label = "Наименование_товара_каз", width = 60 });
                 col.Add(new ColModel { name = "Доля_КС__", label = "Доля_КС__", width = 60 });
                 col.Add(new ColModel { name = "Вес_нетто_брутто", label = "Вес_нетто_брутто", width = 60 });
@@ -373,12 +373,12 @@ namespace CMER
             else if (Name == "IDCountries")
             {
                 Model.dicname = "IDCountries";
-                Model.textField = "Names";
+                Model.textField = "name";
                 Model.idField = "Id";
                 col.Add(new ColModel { name = "Id", label = "ИД", width = 60, key = true });
                 col.Add(new ColModel { name = "Code", label = "Code", width = 60 });
                 //col.Add(new ColModel { name = "IsDeleted", label = "IsDeleted", width = 60 });
-                col.Add(new ColModel { name = "Names", label = "Название", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Название", width = 60 });
                 col.Add(new ColModel { name = "CreatedDate", label = "CreatedDate", width = 60 });
                 col.Add(new ColModel { name = "ModifiedDate", label = "ModifiedDate", width = 60 });
                 col.Add(new ColModel { name = "Alfa2", label = "Alfa2", width = 60 });
@@ -388,10 +388,10 @@ namespace CMER
             else if (Name == "IDTRUType")
             {
                 Model.dicname = "IDTRUType";
-                Model.textField = "Descr";
+                Model.textField = "name";
                 Model.idField = "ID";
                 col.Add(new ColModel { name = "ID", label = "ИД", width = 60, key = true });
-                col.Add(new ColModel { name = "Descr", label = "Тип ТРУ", width = 60 });
+                col.Add(new ColModel { name = "name", label = "Тип ТРУ", width = 60 });
                 Model.colModel = col;
             }
 

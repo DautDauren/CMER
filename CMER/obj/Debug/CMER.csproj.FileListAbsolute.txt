@@ -293,3 +293,4 @@ C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\r
 C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\obj\Debug\CMER.dll
 C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\obj\Debug\CMER.pdb
+C:\Users\Dauren\Documents\Visual Studio 2015\Projects\CMER Jeasy\CMER\CMER\obj\Debug\CMER.csprojResolveAssemblyReference.cache

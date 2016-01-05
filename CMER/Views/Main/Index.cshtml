@@ -3,46 +3,12 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutAce.cshtml";
 }
-<style>
-.modal-content {
-    width: 550px;
-    position: relative;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #999;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 6px;
-    outline: 0;
-    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
-    box-shadow: 0 3px 9px rgba(0,0,0,.5);
-}
-    .cell_hover {
-        background-color:yellow!important;
-    }
-    .ui-state-highlight {
-    background: #fbec88 repeat-x scroll 50% 50%;
-    border: 1px solid #fad42e;
-    color: #363636;
-    }
-    .modal {
-        width:700px;
-        height:550px
-    }
-    .modal-body {
-        max-height:450px;
-    }
-    #searhModal {
-    height: 30px;
-}
-    .input-medium {
-        height: 30px!important;
-    }
-</style>
+
 @section scripts{
     <!-- The jQuery library is a prerequisite for all jqSuite products -->
     @*<script src="~/Scripts/jquery-1.11.0.min.js"></script>*@
     <!-- We support more than 40 localizations -->
+
 <script src="~/Scripts/moment.min.js"></script>
 <script src="~/Content/bootstrap-datepicker.js"></script>
 
@@ -111,15 +77,194 @@
                         }
                     }
                 },
-                { label: 'Наименование по КПВЭД', name: 'kpvedName', dicname: 'IDKpved', width: 150, type:'list' },
-                { label: 'Заказчик', name: 'ctgSName', dicname: 'IDContragents', width: 150, type: 'list' },
-                { label: 'Поставщик', name: 'ctgPName', dicname: 'IDContragents', width: 150, type: 'list' },
-                { label: 'Местонахождение заказчика', name: 'katoSName', dicname: 'IDKato', width: 150, type: 'list' },
-                { label: 'Местонахождение поставщика', name: 'katoPName', dicname: 'IDKato', width: 150, type: 'list' },
-                { label: 'Ед. Измерения', name: 'mkeeName', dicname: 'IDMkee', width: 150, type: 'list' },
-                { label: 'Наименование по СКП', name: 'skpName', dicname: 'IDSkp', width: 150, type: 'list' },
-                { label: 'Страна поставщика', name: 'countrySName', dicname: 'IDCountries', width: 150, type: 'list' },
-                { label: 'Страна заказчика', name: 'countryPName', dicname: 'IDCountries', width: 150, type: 'list' },
+                { label: 'Наименование по КПВЭД', name: 'kpvedName', dicname: 'IDKpved', width: 150, type:'list',
+                searchoptions: {
+                    // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                    // use it to place a third party control to customize the toolbar
+                    dataInit: function (element) {
+                        $(element).attr("autocomplete", "off").typeahead({
+                            appendTo: "body",
+                            source: function (query, proxy) {
+                                $.ajax({
+                                    url: '/Grid/GetDicData',
+                                    dataType: "json",
+                                    data: { Name: 'IDKpved', search: query },
+                                    success: proxy
+                                });
+                            }
+                        });
+                    },
+                        sopt : ['cn']
+                }
+                },
+                {
+                    label: 'Заказчик', name: 'ctgSName', dicname: 'IDContragents', width: 150, type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, proxy) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicData',
+                                        dataType: "json",
+                                        data: { Name: 'IDContragents', search: query },
+                                        success: proxy
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+                },
+                {
+                    label: 'Поставщик', name: 'ctgPName', dicname: 'IDContragents', width: 150, type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, proxy) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicData',
+                                        dataType: "json",
+                                        data: { Name: 'IDContragents', search: query },
+                                        success: proxy
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+                },
+                {
+                    label: 'Местонахождение заказчика', name: 'katoSName', dicname: 'IDKato', width: 150, type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, proxy) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicData',
+                                        dataType: "json",
+                                        data: { Name: 'IDKato', search: query },
+                                        success: proxy
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+                },
+                {
+                    label: 'Местонахождение поставщика', name: 'katoPName', dicname: 'IDKato', width: 150, type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, proxy) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicData',
+                                        dataType: "json",
+                                        data: { Name: 'IDKato', search: query },
+                                        success: proxy
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+                },
+                {
+                    label: 'Ед. Измерения', name: 'mkeeName', dicname: 'IDMkee', width: 150, type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, proxy) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicData',
+                                        dataType: "json",
+                                        data: { Name: 'IDMkee', search: query },
+                                        success: proxy
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+                },
+                {
+                    label: 'Наименование по СКП', name: 'skpName', dicname: 'IDSkp', width: 150, type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, proxy) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicData',
+                                        dataType: "json",
+                                        data: { Name: 'IDSkp', search: query },
+                                        success: proxy
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+                },
+                {
+                    label: 'Страна поставщика', name: 'countrySName', dicname: 'IDCountries', width: 150, type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, proxy) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicData',
+                                        dataType: "json",
+                                        data: { Name: 'IDCountries', search: query },
+                                        success: proxy
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+                },
+                {
+                    label: 'Страна заказчика', name: 'countryPName', dicname: 'IDCountries', width: 150, type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, proxy) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicData',
+                                        dataType: "json",
+                                        data: { Name: 'IDCountries', search: query },
+                                        success: proxy
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+                },
                 {
                     label: 'Тип ТРУ', name: 'truType', width: 150, dicname: 'IDTRUType', type: 'list',
                     searchoptions: {
@@ -149,7 +294,27 @@
                     }
 
                 },
-                { label: 'Источник', name: 'srcName', width: 150, dicname: 'IDSource', type: 'list' },
+                {
+                    label: 'Источник', name: 'srcName', width: 150, dicname: 'IDSource', type: 'list',
+                    searchoptions: {
+                        // dataInit is the client-side event that fires upon initializing the toolbar search field for a column
+                        // use it to place a third party control to customize the toolbar
+                        dataInit: function (element) {
+                            $(element).attr("autocomplete", "off").typeahead({
+                                appendTo: "body",
+                                source: function (query, proxy) {
+                                    $.ajax({
+                                        url: '/Grid/GetDicData',
+                                        dataType: "json",
+                                        data: { Name: 'IDSource', search: query },
+                                        success: proxy
+                                    });
+                                }
+                            });
+                        },
+                        sopt: ['cn']
+                    }
+                },
             ],
             viewrecords: true,
             height: 500,
@@ -227,7 +392,9 @@
                           { "field": "Name", "op": "eq", "data": "Hanari Carnes" },
                           { "field": "IDFact", "op": "le", "data": "10255" }
                         ]
-                    }; 
+                    };
+        // activate the toolbar searching
+                    $('#jqGrid').jqGrid('filterToolbar',{stringResult: true, autosearch:true});
                     // activate the build in search with multiple option
                     $('#jqGrid').navGrid("#jqGridPager", {                
                         search: true, // show search button on the toolbar
@@ -240,9 +407,9 @@
                     {}, // add options
                     {}, // delete options
                     { 
-                        multipleSearch: true, 
-                        multipleGroup: true, 
-                        showQuery: true,
+                          multipleSearch: true, 
+                       // multipleGroup: true, 
+                       // showQuery: true,
                         // set the names of the template
                        // tmplNames: ["Template One", "Template Two"],
                         // set the template contents
@@ -264,16 +431,25 @@
     function DateFormat(cellValue, options, rowObject) {
         return moment(cellValue).format('DD.MM.YYYY');
     }
-    var dicname, rowID,selID, isdate;
+    var dicname, rowID,selID, isdate, rowName;
     function Choose()
     {
         var grid = $("#jqGridModal");
         var rowKey = grid.jqGrid('getGridParam', "selrow");
-        
+        var rowLabel = $("#jqGridModal").jqGrid('getCell', rowKey, 'ID');
+        var celValue;
+        if (rowLabel)
+            celValue = rowLabel + ' - ' + $("#jqGridModal").jqGrid('getCell', rowKey, 'name');
+        else
+            celValue = $("#jqGridModal").jqGrid('getCell', rowKey, 'name');
         if (rowKey) {
             $.post("/Grid/PostRawCell", { column: dicname, rowID: rowID, id: rowKey }, function () {
                 $('#modal-table').modal('hide');
-                $('#jqGrid').trigger("reloadGrid");
+                //$('#jqGrid').trigger("reloadGrid");
+                var rowData = $('#jqGrid').jqGrid('getRowData', rowID);
+                rowData[dicname] = celValue;
+                console.log(rowData[dicname]);
+                $('#jqGrid').jqGrid('setRowData', rowID, rowData);
             });
         }
         else
@@ -285,12 +461,20 @@
             if (isdate) {
                 $.post("/Grid/PostRawCellDate", { column: dicname, rowID: rowID, id: moment(selValue, "DD.MM.YYYY").format("DD/MM/YYYY") }, function () {
                     $('#modal-date').modal('hide');
-                    $('#jqGrid').trigger("reloadGrid");
+                    //$('#jqGrid').trigger("reloadGrid");
+                    var rowData = $('#jqGrid').jqGrid('getRowData', rowID);
+                    rowData[dicname] = selValue;
+                    console.log(rowData[dicname]);
+                    $('#jqGrid').jqGrid('setRowData', rowID, rowData);
                 });
             } else {
                 $.post("/Grid/PostRawCellValue", { column: dicname, rowID: rowID, id: selValue }, function () {
                     $('#modal-date').modal('hide');
-                    $('#jqGrid').trigger("reloadGrid");
+                    //$('#jqGrid').trigger("reloadGrid");
+                    var rowData = $('#jqGrid').jqGrid('getRowData', rowID);
+                    rowData[dicname] = selValue;
+                    console.log(rowData[dicname]);
+                    $('#jqGrid').jqGrid('setRowData', rowID, rowData);
                 });
             }
         }
@@ -302,6 +486,7 @@
     {
         var p = $("#jqGrid").jqGrid("getGridParam"), // object with all parameters
           cm = p.colModel[iCol];
+        var dic =cm.dicname;
         console.log(rowId);
         console.log(cm);
         dicname = cm.name;
@@ -317,10 +502,10 @@
                 datatype: "json",
                 colModel: data.colModel,
                 width:680,
-                height: 300,
+                height: 200,
                 rowNum: 15,
                 viewrecords: true,
-                scroll: 1,
+                scroll: true,
                 postData: { Name: cm.dicname },
                 emptyrecords:"",
                 pager: "#jqGridPagerModal"
@@ -329,8 +514,9 @@
             var items = [], map = {};
             $("#searhModal").attr("autocomplete", "off").typeahead({
                 appendTo: "body",
-                source: function (query, typeahead) {                  
-                    return $.get('/Grid/GetDicData', { Name: cm.dicname, search: query }, function (data) {
+                source: function (query, typeahead) {
+                    console.log(dic);
+                    return $.get('/Grid/GetDicData', { Name: dic, search: query }, function (data) {
                         $('#jqGridModal').jqGrid('clearGridData');
                         $('#jqGridModal').jqGrid('setGridParam', { datatype: 'local', data: data }).trigger("reloadGrid");
                         //$('#jqGridModal').trigger('reloadGrid');
@@ -344,7 +530,7 @@
             $('#modal-table').modal('show');
             $("#searhModal").text(""); $("#searhModal").val("");
             //$('#modal-table').toggleClass('hide');
-            $('#modal-table').on("hidden.bs.modal", function (e) { $.jgrid.gridUnload("jqGridModal"); $.jgrid.gridDestroy("jqGridModal"); });
+            $('#modal-table').on("hidden.bs.modal", function (e) { $.jgrid.gridUnload("jqGridModal"); $.jgrid.gridDestroy("jqGridModal"); $("#searhModal").typeahead("destroy"); });
         });
         } else if (cm.type == 'date') {
             isdate = true;
@@ -395,6 +581,60 @@
 </script>
 
 }
+<style>
+    .modal-content {
+        width: 550px;
+        position: relative;
+        background-color: #fff;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #999;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 6px;
+        outline: 0;
+        -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+        box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    }
+
+    .cell_hover {
+        background-color: yellow !important;
+    }
+
+    .ui-state-highlight {
+        background: #fbec88 repeat-x scroll 50% 50%;
+        border: 1px solid #fad42e;
+        color: #363636;
+    }
+
+    .modal {
+        width: 700px;
+        height: 550px;
+    }
+
+    .modal-body {
+        max-height: 450px;
+    }
+
+    #searhModal {
+        height: 30px;
+    }
+
+    .input-medium {
+        height: 30px !important;
+    }
+
+    .ui-th-ltr {
+        padding: 0px !important;
+    }
+
+    .ui-search-input {
+        padding: 0px !important;
+        vertical-align: middle!important;
+    }
+    .ui-search-clear {
+        padding: 0px!important;
+    }
+</style>
     @*<script src="~/Scripts/bootstrap.min.js"></script>*@
     <div style="margin-left:20px">
         <table id="jqGrid"></table>
